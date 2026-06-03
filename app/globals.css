@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand */
+  --color-red: #cc0000;
+  --color-red-dark: #a80000;
+  --color-gold: #c99700;
+
+  /* Surfaces — more distinct than before */
+  --color-surface: #0a0a0a;
+  --color-card: #141414;
+  --color-card-hover: #1c1c1c;
+  --color-divider: #2e2e2e;
+
+  /* Text */
+  --color-light: #efefef;
+  --color-muted: #888888;
+  --color-subtle: #4a4a4a;
+
+  /* Typography */
+  --font-bebas: var(--next-font-bebas), "Bebas Neue", sans-serif;
+  --font-sans: var(--next-font-sans), "DM Sans", system-ui, sans-serif;
+  --font-mono: var(--next-font-mono), "DM Mono", ui-monospace, monospace;
+}
+
+:root {
+  --red-glow: rgba(204, 0, 0, 0.12);
+  --red-glow-strong: rgba(204, 0, 0, 0.25);
+}
+
+/* ── Base ── */
+/* NOTE: box-sizing / margin / padding reset is handled by Tailwind v4 Preflight.
+   Do NOT add a bare * { padding:0 } here — it would be unlayered and would
+   override all Tailwind utility classes. */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #efefef;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* Subtle grain overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: 0.02;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid #cc0000;
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* ── Hero grid ── */
+.hero-grid-bg {
+  background-image:
+    radial-gradient(circle, rgba(204, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ── Section with subtle red gradient lift ── */
+.section-accent {
+  background: linear-gradient(180deg, #141414 0%, #111111 100%);
+}
+
+/* ── Technical grid ── */
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(46, 46, 46, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46, 46, 46, 0.35) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* ── Nav link hover underline ── */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #cc0000;
+  box-shadow: 0 0 8px rgba(204, 0, 0, 0.7);
+  transition: width 0.22s ease;
+}
+.nav-link:hover::after,
+.nav-link[data-active="true"]::after {
+  width: 100%;
+}
+
+/* ── Risk gauge pulse ── */
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(204, 0, 0, 0.5); }
+  50%       { box-shadow: 0 0 0 14px rgba(204, 0, 0, 0); }
+}
+.animate-pulse-red {
+  animation: pulse-red 1.8s ease-in-out infinite;
+}
+
+/* ── Stat number ── */
+.stat-number {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum";
+}
+
+/* ── Card left accent ── */
+.card-accent {
+  border-left: 3px solid #cc0000;
+}
+
+/* ── Red divider rule ── */
+.red-rule {
+  height: 1px;
+  background: linear-gradient(90deg, #cc0000, rgba(204, 0, 0, 0.3));
+  width: 100%;
+}
+
+/* ── Subtle red glow on dark cards ── */
+.card-glow {
+  box-shadow: 0 0 0 1px rgba(204, 0, 0, 0.15), 0 8px 32px rgba(0, 0, 0, 0.6);
+}
