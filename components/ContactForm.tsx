@@ -32,7 +32,9 @@ export function ContactForm() {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm<ContactFormData>();
+  } = useForm<ContactFormData>({
+    defaultValues: { preferredContact: "Email" },
+  });
 
   const onSubmit = async (data: ContactFormData) => {
     setStatus("loading");
