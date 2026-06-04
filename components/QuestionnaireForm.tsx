@@ -244,6 +244,10 @@ export function QuestionnaireForm() {
     setSubmitStatus("loading");
     const scoreData = calcRiskScore(tools, governance, dataTypes);
     const level = getRiskLevel(scoreData);
+    const reportFindings = generateFindings(sector[0] ?? "", tools, governance, dataTypes);
+    const findingsText = reportFindings.length > 0
+      ? reportFindings.map((f, i) => `${i + 1}. ${f}`).join("\n\n")
+      : "No specific findings generated.";
     try {
       await emailjs.send(
         "service_sde7xo9",
@@ -259,6 +263,7 @@ export function QuestionnaireForm() {
           data_types: dataTypes.join(", "),
           risk_score: scoreData.toString(),
           risk_level: level.label,
+          findings: findingsText,
           to_email: "hello@quazarrsecurity.com",
         },
         "t5yp6bticOrlGpkLr"
