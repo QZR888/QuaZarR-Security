@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SectionLabel } from "@/components/SectionLabel";
 import { RedRule } from "@/components/RedRule";
@@ -57,7 +58,17 @@ export default function AboutPage() {
       <section className="w-full py-24 px-8 lg:px-16 hero-grid-bg">
         <div className="max-w-3xl mx-auto text-center">
           <AnimatedSection>
-            <SectionLabel className="mb-4 flex justify-center">The Team</SectionLabel>
+            <SectionLabel className="mb-6 flex justify-center">The Team</SectionLabel>
+            <div className="flex justify-center mb-6">
+              <Image
+                src="/og-image.png"
+                alt="QuaZarR Security"
+                width={120}
+                height={120}
+                className="rounded-sm"
+                priority
+              />
+            </div>
           </AnimatedSection>
           <AnimatedSection delay={0.06}>
             {/* DM Sans heading to preserve QuaZarR mixed-case */}
