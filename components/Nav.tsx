@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
@@ -41,9 +42,17 @@ export function Nav() {
           {/* Logo */}
           <Link
             href="/"
-            className="hover:opacity-80 transition-opacity shrink-0 flex items-baseline gap-3"
+            className="hover:opacity-80 transition-opacity shrink-0 flex items-center gap-3"
             aria-label="QuaZarR Security — home"
           >
+            <Image
+              src="/og-image.png"
+              alt="QuaZarR Security"
+              width={40}
+              height={40}
+              className="rounded-sm"
+              priority
+            />
             <span className="font-sans font-black text-[28px] leading-none text-red tracking-tight">
               QuaZarR
             </span>
