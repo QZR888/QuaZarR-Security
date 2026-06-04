@@ -247,7 +247,7 @@ export function QuestionnaireForm() {
     try {
       await emailjs.send(
         "service_sde7xo9",
-        "template_wfe73ab",
+        "template_jimmb8c",
         {
           form_type: "Free Report",
           first_name: data.firstName,
