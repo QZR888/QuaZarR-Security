@@ -52,13 +52,6 @@ export default function InsightsPage() {
             ))}
           </StaggerContainer>
 
-          <p className="text-xs text-subtle text-center mb-16">
-            When Rowan publishes new content on LinkedIn, update the{" "}
-            <code className="font-mono text-muted">insights</code> array in{" "}
-            <code className="font-mono text-muted">lib/insights.ts</code> with the new post URL
-            and summary. No CMS required.
-          </p>
-
           <RedRule className="mb-16" />
 
           {/* LinkedIn CTA */}
