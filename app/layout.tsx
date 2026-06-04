@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "AI risk assessments for UK SMBs. 7 frameworks. Dual expert sign-off. Board-ready reports. From £750.",
     images: [
       {
-        url: "https://quazarrsecurity.com/api/og",
+        url: "https://quazarrsecurity.com/og-image.png",
         width: 1080,
         height: 1080,
         alt: "QuaZarR Security",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
     description:
       "AI risk assessments for UK SMBs. 7 frameworks. Dual expert sign-off. From £750.",
-    images: ["https://quazarrsecurity.com/api/og"],
+    images: ["https://quazarrsecurity.com/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
