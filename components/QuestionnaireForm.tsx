@@ -248,26 +248,29 @@ export function QuestionnaireForm() {
     const findingsText = reportFindings.length > 0
       ? reportFindings.map((f, i) => `${i + 1}. ${f}`).join("\n\n")
       : "No specific findings generated.";
+    const emailPayload = {
+      first_name: data.firstName,
+      email: data.email,
+      business_name: data.businessName,
+      sector: sector.join(", "),
+      ai_tools: tools.join(", "),
+      governance: governance.join(", "),
+      data_types: dataTypes.join(", "),
+      risk_score: scoreData.toString(),
+      risk_level: level.label,
+      findings: findingsText,
+    };
     try {
-      await emailjs.send(
-        "service_sde7xo9",
-        "template_jimmb8c",
-        {
-          form_type: "Free Report",
-          first_name: data.firstName,
-          email: data.email,
-          business_name: data.businessName,
-          sector: sector.join(", "),
-          ai_tools: tools.join(", "),
-          governance: governance.join(", "),
-          data_types: dataTypes.join(", "),
-          risk_score: scoreData.toString(),
-          risk_level: level.label,
-          findings: findingsText,
-          to_email: "hello@quazarrsecurity.com",
-        },
-        "t5yp6bticOrlGpkLr"
-      );
+      // Send to QuaZarR inbox
+      await emailjs.send("service_sde7xo9", "template_jimmb8c", {
+        ...emailPayload,
+        to_email: "hello@quazarrsecurity.com",
+      }, "t5yp6bticOrlGpkLr");
+      // Send report copy to submitter
+      await emailjs.send("service_sde7xo9", "template_jimmb8c", {
+        ...emailPayload,
+        to_email: data.email,
+      }, "t5yp6bticOrlGpkLr");
       setSubmitStatus("success");
       setStep(6);
     } catch {
