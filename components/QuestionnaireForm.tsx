@@ -246,8 +246,8 @@ export function QuestionnaireForm() {
     const level = getRiskLevel(scoreData);
     try {
       await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
+        "service_sde7xo9",
+        "template_wfe73ab",
         {
           form_type: "Free Report",
           first_name: data.firstName,
@@ -261,7 +261,7 @@ export function QuestionnaireForm() {
           risk_level: level.label,
           to_email: "hello@quazarrsecurity.com",
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? ""
+        "t5yp6bticOrlGpkLr"
       );
       setSubmitStatus("success");
       setStep(6);
