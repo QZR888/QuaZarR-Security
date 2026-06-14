@@ -75,6 +75,10 @@ export function Footer() {
             <Link href="/cookie-policy" className="hover:text-light transition-colors">
               Cookie Policy
             </Link>
+            {" "}&mdash;{" "}
+            <Link href="/privacy-policy" className="hover:text-light transition-colors">
+              Privacy Policy
+            </Link>
           </p>
           <p className="text-[11px] text-subtle leading-relaxed">
             AI risk assessments mapped against OWASP LLM Top 10, EU AI Act, NIST AI RMF,
