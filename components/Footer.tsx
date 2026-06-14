@@ -71,7 +71,10 @@ export function Footer() {
 
         <div className="border-t border-divider pt-8">
           <p className="text-xs text-muted mb-3">
-            &copy; 2026 QuaZarR Security. All rights reserved.
+            &copy; 2026 QuaZarR Security. All rights reserved. &mdash;{" "}
+            <Link href="/cookie-policy" className="hover:text-light transition-colors">
+              Cookie Policy
+            </Link>
           </p>
           <p className="text-[11px] text-subtle leading-relaxed">
             AI risk assessments mapped against OWASP LLM Top 10, EU AI Act, NIST AI RMF,
