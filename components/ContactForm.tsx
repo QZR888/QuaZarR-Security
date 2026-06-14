@@ -241,6 +241,15 @@ export function ContactForm() {
         {status === "loading" ? "Sending..." : "Send Message"}
       </button>
 
+      <p className="text-[11px] text-subtle text-center leading-relaxed">
+        By submitting this form, you consent to QuaZarR Security processing your data for
+        the purpose of responding to your enquiry. We process this data under legitimate
+        interests.{" "}
+        <a href="/privacy-policy" className="underline hover:text-light transition-colors">
+          View our Privacy Policy.
+        </a>
+      </p>
+
       <p className="text-xs text-subtle text-center">
         We respond to all enquiries within one working day. Your information is handled in
         accordance with UK GDPR.
