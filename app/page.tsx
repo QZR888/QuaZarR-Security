@@ -70,7 +70,7 @@ const whyCards = [
   },
   {
     title: "Current Frameworks — Including DUAA 2025",
-    body: "We incorporate the Data Use and Access Act 2025 alongside the EU AI Act. Competitors haven't updated their products to reflect either.",
+    body: "We incorporate the Data (Use and Access) Act 2025 alongside the EU AI Act. Competitors haven't updated their products to reflect either.",
   },
   {
     title: "Built for SMBs — Not Enterprise",

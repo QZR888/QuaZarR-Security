@@ -18,32 +18,32 @@ const retainerItems = [
   {
     number: "01",
     title: "Quarterly AI Risk Reassessment",
-    body: "Every three months, we conduct a full reassessment of your AI risk posture — capturing new tools, workflow changes, staff AI usage shifts, and any new regulatory developments. You always know where you stand.",
+    body: "Every quarter, we reassess your AI risk posture against your standing risk register, capturing new tools, workflow changes, and regulatory developments. You always know where you stand.",
   },
   {
     number: "02",
-    title: "New AI Tool Vetting",
-    body: "Before your business adopts any new AI tool, we review it against all relevant frameworks and provide a written recommendation. No more unvetted AI going live with your client data.",
+    title: "AI Tool Vetting Before Adoption",
+    body: "Before your team adopts any new AI tool, we vet it first: DPA availability, training settings, data residency, EU AI Act classification, and sector-specific red flags. You receive a clear approved, conditional, or rejected verdict within 2 working days. Up to 3 vettings per quarter included; additional vettings at £95 each.",
   },
   {
     number: "03",
-    title: "Policy Maintenance & Updates",
-    body: "As UK legislation evolves — DUAA 2025 is already in force; more is coming — we update your Staff AI Usage Policy and governance documentation to remain compliant. You receive updated versions as standards change.",
+    title: "Policy Maintenance",
+    body: "Your Staff AI Usage Policy and governance documentation are updated within 10 working days of any regulatory change relevant to your business. You are never left operating under outdated documentation.",
   },
   {
     number: "04",
-    title: "Incident Response Support",
-    body: "In the event of an AI-related data incident, security concern, or regulatory enquiry, we provide immediate advisory support — helping you understand your obligations, draft your response, and mitigate exposure.",
+    title: "Written Regulatory Alerts",
+    body: "We monitor OWASP LLM Top 10, NIST AI RMF, EU AI Act guidance, ICO enforcement trends, and MITRE ATLAS. When something relevant to your business changes, you receive a written alert with recommended actions.",
   },
   {
     number: "05",
-    title: "Framework Monitoring",
-    body: "We track updates to OWASP LLM Top 10, NIST AI RMF, EU AI Act guidance, UK ICO enforcement trends, and MITRE ATLAS. Anything relevant to your business is flagged with recommended actions.",
+    title: "Advisory Hours",
+    body: "2 advisory hours included per quarter for questions, scenario reviews, or policy guidance. Available by email, call, or video. Same-working-day response to any request received before 2pm.",
   },
   {
     number: "06",
-    title: "Priority Access",
-    body: "Retainer clients receive priority response times (same working day) and dedicated access to both our CEO and CTO — no waiting for a slot, no re-explaining your context.",
+    title: "Incident Response Support",
+    body: "If an AI-related data incident, security concern, or regulatory enquiry arises, we engage the same working day. The first 2 hours of incident response advisory are included in your retainer.",
   },
 ];
 
@@ -101,33 +101,40 @@ export default function RetainerPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <AnimatedSection>
               <SectionLabel className="mb-4">Retainer Pricing</SectionLabel>
-              <p className="text-light leading-relaxed mb-4">
-                Retainer pricing is scoped to the size of your business, your AI tool footprint,
-                and the level of ongoing support required. We don't publish a flat fee because
-                your business isn't flat.
-              </p>
-              <p className="text-sm text-muted leading-relaxed">
-                All retainer clients receive a full Basic or Full Assessment as their onboarding
+              <p className="font-bebas text-5xl text-red tracking-wide leading-none mb-3">£395<span className="text-2xl text-muted ml-2 tracking-normal font-sans font-normal">/ month</span></p>
+              <p className="text-sm text-muted mb-6">Billed monthly. Minimum 12-month term.</p>
+              <p className="text-sm text-light leading-relaxed mb-4">
+                All retainer clients complete a full Basic or Full Assessment as their onboarding
                 engagement before the retainer begins.
+              </p>
+              <p className="text-xs text-subtle leading-relaxed">
+                QuaZarR Security provides risk assessment and guidance, not legal advice.
               </p>
             </AnimatedSection>
 
             <AnimatedSection delay={0.1}>
               <div className="border border-red bg-card p-8">
                 <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-red mb-4">
-                  Request a Proposal
+                  Get Started
                 </p>
                 <p className="text-light leading-relaxed mb-6">
-                  We'll review your existing assessment — or conduct a discovery call if you don't
-                  have one — and come back within two working days with a fully scoped retainer
-                  proposal including pricing.
+                  Book a discovery call. We'll review your current assessment or start from
+                  scratch and confirm the retainer scope before anything begins.
                 </p>
-                <Link
-                  href="/quote"
-                  className="inline-block bg-red text-white text-xs font-bold uppercase tracking-[0.12em] px-6 py-3 hover:bg-red-dark transition-colors"
-                >
-                  Request a Retainer Proposal
-                </Link>
+                <div className="flex flex-col gap-3">
+                  <Link
+                    href="/contact"
+                    className="inline-block bg-red text-white text-xs font-bold uppercase tracking-[0.12em] px-6 py-3 hover:bg-red-dark transition-colors text-center"
+                  >
+                    Book a Discovery Call
+                  </Link>
+                  <Link
+                    href="/quote"
+                    className="inline-block border border-red text-red text-xs font-bold uppercase tracking-[0.12em] px-6 py-3 hover:bg-red hover:text-white transition-colors text-center"
+                  >
+                    Request a Quote
+                  </Link>
+                </div>
               </div>
             </AnimatedSection>
           </div>

@@ -13,38 +13,43 @@ export const metadata: Metadata = {
 
 const basicIncludes = [
   "Complete AI tool inventory",
-  "EU AI Act risk classification per tool",
+  "EU AI Act risk classification (deployer tier)",
   "OWASP LLM Top 10 — all 10 categories",
   "NIST AI RMF & NIST CSF 2.0 maturity snapshot",
   "GRC posture overview — scored",
-  "UK GDPR & DUAA 2025 compliance snapshot",
+  "UK GDPR & Data (Use and Access) Act 2025 compliance snapshot",
   "Full risk register with free actions per finding",
   "Remediation roadmap — This Week / 30 Days / 90 Days",
+  "One-page executive summary with overall risk rating",
+  "Transparent 5x5 risk scoring methodology",
   "Dual sign-off: CEO + CTO",
 ];
 
 const fullExtras = [
-  "MITRE ATLAS adversarial threat mapping",
-  "EU AI Act full gap analysis — per tool, per article",
+  "MITRE ATLAS adversarial threat mapping (sector-specific scenarios)",
+  "EU AI Act deployer gap analysis: per tool, per article",
   "NIST AI RMF full 4-function assessment",
   "NIST CSF 2.0 full 6-function maturity assessment",
   "GRC framework scored 1–10 across all three pillars",
-  "UK GDPR + DUAA 2025 full 11-article gap analysis",
+  "UK GDPR + Data (Use and Access) Act 2025 full gap analysis",
   "Framework cross-reference matrix — all 7 frameworks",
+  "Documented Evidence Register for every material finding",
+  "Financial exposure quantification against UK GDPR fine ceilings",
   "DPA review — all AI tool providers",
-  "13-clause Staff AI Usage Policy — ready to issue",
+  "13-clause Staff AI Usage Policy + ADM procedure (Articles 22A to 22D)",
   "90-day roadmap with action owners",
+  "45-minute board readout call included",
   "90-day reassessment call included",
   "Dual sign-off: CEO + CTO — board ready",
 ];
 
 const retainerItems = [
-  "Quarterly AI risk reassessment",
-  "New AI tool vetting before adoption",
-  "Policy maintenance as legislation evolves",
-  "Incident response advisory support",
-  "Framework monitoring and update alerts",
-  "Same working-day priority access",
+  "Quarterly AI risk reassessment against standing risk register",
+  "Up to 3 tool vettings per quarter (verdict within 2 working days)",
+  "Policy updates within 10 working days of regulatory change",
+  "Written regulatory alerts",
+  "2 advisory hours per quarter",
+  "Incident response: same-working-day, first 2 hours included",
 ];
 
 export default function ServicesPage() {
@@ -143,10 +148,8 @@ export default function ServicesPage() {
             <div className="bg-card border border-divider p-8 h-full flex flex-col">
               <SectionLabel className="mb-4 text-muted">Ongoing Support</SectionLabel>
               <h2 className="font-bebas text-3xl tracking-wide text-white mb-2">Retainer</h2>
-              <p className="font-bebas text-2xl text-muted tracking-wide leading-none mb-1">
-                Scoped Pricing
-              </p>
-              <p className="text-xs text-muted mb-6">Quarterly cadence</p>
+              <p className="font-bebas text-4xl text-white tracking-wide leading-none mb-1">£395</p>
+              <p className="text-xs text-muted mb-6">Per month · billed monthly · 12-month term</p>
               <p className="text-sm text-light leading-relaxed mb-6 flex-1">
                 AI adoption doesn't stop after a single assessment. A retainer keeps your
                 compliance posture current as legislation evolves, new tools are adopted, and

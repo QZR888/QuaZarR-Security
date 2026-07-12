@@ -47,7 +47,7 @@ const pillars = [
   },
   {
     title: "Current By Construction",
-    body: "Competitors are still assessing against frameworks that predate the EU AI Act and the Data Use and Access Act 2025. We built our assessment methodology to incorporate the most current legislative landscape from day one.",
+    body: "Competitors are still assessing against frameworks that predate the EU AI Act and the Data (Use and Access) Act 2025. We built our assessment methodology to incorporate the most current legislative landscape from day one.",
   },
 ];
 

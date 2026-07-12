@@ -23,12 +23,12 @@ const sections = [
   {
     number: "02",
     title: "EU AI Act Risk Classification",
-    body: "Each tool in your inventory is classified against the EU AI Act's four-tier risk hierarchy: Unacceptable Risk, High Risk, Limited Risk, Minimal Risk. Prohibited applications are flagged immediately.",
+    body: "Each tool in your inventory is classified against the EU AI Act's four-tier risk hierarchy: Unacceptable Risk, High Risk, Limited Risk, Minimal Risk. As a deployer, you carry distinct obligations at each tier. Prohibited applications are flagged immediately. AI literacy (Article 4) applies now; high-risk deployer obligations are phased in from December 2027.",
   },
   {
     number: "03",
     title: "OWASP LLM Top 10 (2025) Assessment",
-    body: "All 10 vulnerability categories assessed against your current tool usage and deployment. Includes prompt injection, insecure output handling, sensitive data exposure, and training data poisoning risks.",
+    body: "All 10 vulnerability categories assessed against your current tool usage and deployment. Includes prompt injection, improper output handling (LLM05), sensitive information disclosure, and data and model poisoning risks.",
   },
   {
     number: "04",
@@ -42,8 +42,8 @@ const sections = [
   },
   {
     number: "06",
-    title: "UK GDPR & DUAA 2025 Compliance Snapshot",
-    body: "A targeted review of your AI-related compliance position under UK GDPR and the Data Use and Access Act 2025. Includes lawful basis assessment, DPIA requirement identification, and ADM compliance.",
+    title: "UK GDPR & Data (Use and Access) Act 2025 Compliance Snapshot",
+    body: "A targeted review of your AI-related compliance position under UK GDPR and the Data (Use and Access) Act 2025 (DUAA). DUAA replaced Article 22 UK GDPR with new Articles 22A to 22D, in force since 5 February 2026, requiring safeguards (notice, representations, human intervention, contest) for AI-influenced significant decisions. Includes lawful basis assessment, DPIA requirement identification, and ADM compliance.",
   },
   {
     number: "07",
@@ -59,6 +59,16 @@ const sections = [
     number: "09",
     title: "Dual Sign-Off: CEO & CTO",
     body: "Every Basic Assessment is independently reviewed and signed by our CEO (Rowan Money, commercial delivery and client engagement) and CTO (Govend Abdul-Hameed, technical validation and framework accuracy). Two expert perspectives in one report.",
+  },
+  {
+    number: "10",
+    title: "One-Page Executive Summary",
+    body: "A board-ready single page presenting your overall risk rating, top three priority findings, and the single most important action to take immediately. Designed to be shared with directors, investors, or compliance leads without requiring them to read the full report.",
+  },
+  {
+    number: "11",
+    title: "Transparent 5x5 Risk Scoring Methodology",
+    body: "Every risk in your register is scored out of 25 using a defined 5x5 matrix: five likelihood levels multiplied by five impact levels, each with explicit anchors. Scores are never subjective. You receive the scoring matrix alongside every finding so you can challenge, verify, and track changes over time.",
   },
 ];
 
@@ -122,6 +132,12 @@ export default function BasicAssessmentPage() {
                 5–7 working days from completion of your discovery call.
               </p>
             </div>
+          </AnimatedSection>
+
+          <AnimatedSection className="mb-8">
+            <p className="text-xs text-subtle">
+              QuaZarR Security provides risk assessment and guidance, not legal advice.
+            </p>
           </AnimatedSection>
 
           <AnimatedSection>

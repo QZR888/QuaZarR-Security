@@ -17,13 +17,15 @@ export const metadata: Metadata = {
 
 const basicIncludes = [
   "Complete AI tool inventory",
-  "EU AI Act risk classification",
+  "EU AI Act risk classification (deployer tier)",
   "OWASP LLM Top 10 assessment",
   "NIST AI RMF & NIST CSF 2.0 maturity snapshot",
   "GRC posture overview",
-  "UK GDPR & DUAA 2025 compliance snapshot",
+  "UK GDPR & Data (Use and Access) Act 2025 compliance snapshot",
   "Full risk register with immediate free actions",
-  "Prioritised remediation roadmap",
+  "Prioritised remediation roadmap: This Week / 30 Days / 90 Days",
+  "One-page executive summary with overall risk rating",
+  "Transparent 5x5 risk scoring methodology",
   "Dual sign-off: CEO + CTO",
 ];
 
@@ -31,12 +33,12 @@ const additionalSections = [
   {
     number: "10",
     title: "MITRE ATLAS Adversarial Threat Mapping",
-    body: "Full adversarial machine learning threat assessment mapped against MITRE ATLAS — the definitive knowledge base for AI-specific attack techniques. Identifies exposure to model inversion, data poisoning, adversarial examples, and AI supply chain attacks.",
+    body: "Adversarial machine learning threat assessment mapped against MITRE ATLAS, the definitive knowledge base for AI-specific attack techniques. Attack scenarios are written for your sector, not generic theory. Identifies exposure to model inversion, data poisoning, adversarial examples, and AI supply chain attacks.",
   },
   {
     number: "11",
-    title: "EU AI Act Full Gap Analysis",
-    body: "Article-by-article gap analysis for each AI tool in use. Per-tool, per-article compliance position with specific remediation required to meet obligations under Regulation 2024/1689.",
+    title: "EU AI Act Deployer Gap Analysis",
+    body: "Per-tool, article-by-article deployer obligation analysis under Regulation 2024/1689. AI literacy (Article 4) applies now; transparency duties from August 2026; high-risk deployer obligations from December 2027. Prohibited uses are flagged immediately. Your readiness position is documented and evidenced at each obligation tier.",
   },
   {
     number: "12",
@@ -55,8 +57,8 @@ const additionalSections = [
   },
   {
     number: "15",
-    title: "UK GDPR + DUAA 2025 Full 11-Article Gap Analysis",
-    body: "Eleven-article compliance review covering lawful basis, data subject rights, controller obligations, automated decision-making, international transfers, and DUAA 2025 ADM requirements.",
+    title: "UK GDPR + Data (Use and Access) Act 2025 Full Gap Analysis",
+    body: "Comprehensive compliance review covering lawful basis, data subject rights, controller obligations, automated decision-making, and international transfers. Includes the new Articles 22A to 22D introduced by the Data (Use and Access) Act 2025 (DUAA), in force since 5 February 2026, requiring safeguards for AI-influenced significant decisions.",
   },
   {
     number: "16",
@@ -71,7 +73,7 @@ const additionalSections = [
   {
     number: "18",
     title: "13-Clause Staff AI Usage Policy",
-    body: "A legally-structured, ready-to-issue Staff AI Usage Policy covering: permitted tools, prohibited uses, data handling requirements, personal device restrictions, client data protocols, monitoring provisions, and disciplinary framework.",
+    body: "A legally-structured, ready-to-issue Staff AI Usage Policy covering: permitted tools, prohibited uses, data handling requirements, personal device restrictions, client data protocols, monitoring provisions, and disciplinary framework. Includes a ready-to-run procedure for handling automated decision-making requests under Articles 22A to 22D (DUAA).",
   },
   {
     number: "19",
@@ -87,6 +89,21 @@ const additionalSections = [
     number: "21",
     title: "Dual Sign-Off: CEO & CTO — Board Ready",
     body: "Full Review reports are formatted for board distribution. Signed by both CEO and CTO. Suitable for presentation to directors, investors, or auditors.",
+  },
+  {
+    number: "22",
+    title: "Documented Evidence Register",
+    body: "This is evidence-based work, not interview-based. Settings are inspected, vendor agreements reviewed, and workflows observed. Every material finding is supported by a documented Evidence Register, so every score can be challenged, verified, and tracked over time.",
+  },
+  {
+    number: "23",
+    title: "Financial Exposure Quantification",
+    body: "Every applicable finding is mapped to UK GDPR fine ceilings (up to £17.5 million or 4% of global annual turnover). You understand the potential financial exposure of each gap, not just the regulatory obligation.",
+  },
+  {
+    number: "24",
+    title: "45-Minute Board Readout Call",
+    body: "Included as standard. We present the report's headline findings, risk ratings, and priority actions directly to your board or senior leadership team. Board members can ask questions in real time before the 90-day roadmap begins.",
   },
 ];
 
@@ -168,6 +185,12 @@ export default function FullAssessmentPage() {
                 7–10 working days from completion of your discovery call.
               </p>
             </div>
+          </AnimatedSection>
+
+          <AnimatedSection className="mb-8">
+            <p className="text-xs text-subtle">
+              QuaZarR Security provides risk assessment and guidance, not legal advice.
+            </p>
           </AnimatedSection>
 
           <AnimatedSection>
