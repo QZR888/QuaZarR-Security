@@ -38,8 +38,7 @@ const fullExtras = [
   "DPA review — all AI tool providers",
   "13-clause Staff AI Usage Policy + ADM procedure (Articles 22A to 22D)",
   "90-day roadmap with action owners",
-  "45-minute board readout call included",
-  "90-day reassessment call included",
+  "Extended findings walkthrough on delivery, plus 90-day reassessment session",
   "Dual sign-off: CEO + CTO — board ready",
 ];
 

@@ -82,8 +82,8 @@ const additionalSections = [
   },
   {
     number: "20",
-    title: "90-Day Reassessment Call",
-    body: "Included as standard. Three months after delivery, we schedule a reassessment call to review progress against the roadmap, identify new AI tool deployments, and update your compliance position.",
+    title: "Delivery Walkthrough + 90-Day Reassessment",
+    body: "Includes an extended findings walkthrough call on delivery, plus a 90-day reassessment session to review progress against the roadmap and update your compliance position.",
   },
   {
     number: "21",
@@ -99,11 +99,6 @@ const additionalSections = [
     number: "23",
     title: "Financial Exposure Quantification",
     body: "Every applicable finding is mapped to UK GDPR fine ceilings (up to £17.5 million or 4% of global annual turnover). You understand the potential financial exposure of each gap, not just the regulatory obligation.",
-  },
-  {
-    number: "24",
-    title: "45-Minute Board Readout Call",
-    body: "Included as standard. We present the report's headline findings, risk ratings, and priority actions directly to your board or senior leadership team. Board members can ask questions in real time before the 90-day roadmap begins.",
   },
 ];
 
