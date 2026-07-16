@@ -7,10 +7,10 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 export const metadata: Metadata = {
   title: "Basic AI Risk Assessment — From £750",
   description:
-    "A full 9-section AI risk assessment across 6 frameworks. Every active compliance failure identified. Clear remediation roadmap delivered in 5–7 working days.",
+    "A full 11-section AI risk assessment across 6 frameworks. Every active compliance failure identified. Clear remediation roadmap delivered in 5-7 working days.",
   openGraph: {
     title: "Basic AI Risk Assessment — QuaZarR Security",
-    description: "9 sections. 6 frameworks. Dual expert sign-off. From £750.",
+    description: "11 sections. 6 frameworks. Dual expert sign-off. From £750.",
   },
 };
 

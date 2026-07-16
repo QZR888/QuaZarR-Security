@@ -12,7 +12,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 export const metadata: Metadata = {
   title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
   description:
-    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments against 7 frameworks — OWASP LLM Top 10, EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR, DUAA 2025. Dual expert sign-off. Delivered within a week from £750.",
+    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments against 7 frameworks — OWASP LLM Top 10, EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR, DUAA 2025. Dual expert sign-off. Delivered in 5-7 working days from £750.",
   openGraph: {
     title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
     description:
@@ -34,7 +34,7 @@ const jsonLd = {
 };
 
 const stats = [
-  { value: "7", label: "Frameworks Assessed Per Engagement" },
+  { value: "6", label: "Frameworks in Every Assessment" },
   { value: "5", label: "Working Days Turnaround (Basic)" },
   { value: "2", label: "Expert Sign-offs On Every Report" },
   { value: "£750", label: "Starting Price (vs £15k–50k Enterprise)" },
@@ -125,7 +125,7 @@ export default function HomePage() {
             <p className="text-[18px] text-light leading-relaxed max-w-[580px] mb-10">
               We tell you exactly where — and how to fix it. Structured AI risk assessments for UK
               SMBs in recruitment, legal, finance, HR, and accountancy. Board-ready reports. Dual
-              expert sign-off. Delivered within a week.
+              expert sign-off. Delivered in 5-7 working days.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.24}>
