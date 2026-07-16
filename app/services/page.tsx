@@ -192,7 +192,7 @@ export default function ServicesPage() {
               What to Expect
             </h2>
             <p className="text-[16px] text-light leading-relaxed mb-4">
-              Every engagement begins with a 20-minute discovery call. No technical knowledge
+              Every engagement begins with a 25-minute discovery call. No technical knowledge
               required on your side. We map your AI tool usage, data flows, governance position,
               and sector-specific obligations.
             </p>

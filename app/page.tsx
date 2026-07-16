@@ -44,7 +44,7 @@ const howItWorks = [
   {
     number: "01",
     title: "Discovery Call",
-    body: "20 minutes. We map your AI tool usage, data flows, current governance, and compliance position. No technical knowledge required on your side.",
+    body: "25 minutes. We map your AI tool usage, data flows, current governance, and compliance position. No technical knowledge required on your side.",
   },
   {
     number: "02",

@@ -26,7 +26,7 @@ export default function ContactPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="text-[17px] text-light leading-relaxed">
-              20 minutes. We map your AI tool usage, data flows, and compliance position. You leave
+              25 minutes. We map your AI tool usage, data flows, and compliance position. You leave
               with clarity on where you stand and what to do next. No hard sell. No obligation.
             </p>
           </AnimatedSection>
@@ -73,7 +73,7 @@ export default function ContactPage() {
                     "No technical knowledge required",
                     "No obligation to purchase",
                     "Clients typically identify immediate free actions on the call",
-                    "20 minutes via video or phone",
+                    "25 minutes via video or phone",
                   ].map((point) => (
                     <li key={point} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-red shrink-0 mt-0.5" aria-hidden="true" />
