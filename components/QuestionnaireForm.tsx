@@ -99,7 +99,7 @@ function generateFindings(
   }
   if (hasHealth) {
     findings.push(
-      "Health data is a Special Category under Article 9 UK GDPR. Processing it through any AI tool without explicit legal basis, technical safeguards, and documented justification carries the highest available penalty risk — up to €20 million or 4% of global annual turnover."
+      "Health data is a Special Category under Article 9 UK GDPR. Processing it through any AI tool without explicit legal basis, technical safeguards, and documented justification carries the highest available penalty risk — up to £17.5 million or 4% of global annual turnover."
     );
   }
   if (hasLegal && tools.some((t) => ["chatgpt", "gemini", "copilot"].includes(t))) {

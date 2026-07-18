@@ -12,11 +12,11 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 export const metadata: Metadata = {
   title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
   description:
-    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments against 7 frameworks — OWASP LLM Top 10, EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR, DUAA 2025. Dual expert sign-off. Delivered in 5-7 working days from £750.",
+    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks that matter: OWASP LLM Top 10, EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR as amended by DUAA 2025, and the Equality Act 2010 for recruitment. Dual expert sign-off. Delivered in 5-7 working days from £750.",
   openGraph: {
     title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
     description:
-      "Structured AI risk assessments for UK SMBs. 7 frameworks. Dual expert sign-off. From £750.",
+      "Structured AI risk assessments for UK SMBs. Dual expert sign-off. From £750.",
     url: "https://quazarrsecurity.com",
   },
 };
@@ -34,7 +34,7 @@ const jsonLd = {
 };
 
 const stats = [
-  { value: "6", label: "Frameworks in Every Assessment" },
+  { value: "8", label: "Frameworks at Full Scope" },
   { value: "5", label: "Working Days Turnaround (Basic)" },
   { value: "2", label: "Expert Sign-offs On Every Report" },
   { value: "£750", label: "Starting Price (vs £15k–50k Enterprise)" },
@@ -49,7 +49,7 @@ const howItWorks = [
   {
     number: "02",
     title: "Assessment & Report",
-    body: "We map your situation against all 7 relevant frameworks. Both our CEO and CTO independently review and sign off before it reaches you.",
+    body: "We map your situation against every framework relevant to your sector and tier. Both our CEO and CTO independently review and sign off before it reaches you.",
   },
   {
     number: "03",
@@ -77,7 +77,7 @@ const whyCards = [
     body: "Enterprise reports need a legal team to interpret and a six-figure budget to commission. Ours are written for business owners — actionable, plain English, same week.",
   },
   {
-    title: "Seven Frameworks, One Report",
+    title: "Every Framework That Matters, One Report",
     body: "Getting equivalent coverage through separate specialists would cost multiples of our fee. We deliver it as one coordinated, cross-referenced assessment.",
   },
 ];
@@ -88,8 +88,8 @@ const frameworks = [
   { name: "NIST AI RMF (AI 100-1)", colour: "navy" },
   { name: "NIST CSF 2.0 (2024)", colour: "green" },
   { name: "GRC Framework", colour: "purple" },
-  { name: "UK GDPR", colour: "grey" },
-  { name: "Data Use & Access Act 2025", colour: "amber" },
+  { name: "UK GDPR & DUAA 2025", colour: "amber" },
+  { name: "Equality Act 2010 / EHRC", colour: "grey", recruitmentOnly: true },
   { name: "MITRE ATLAS", colour: "grey", fullReviewOnly: true },
 ];
 
@@ -237,7 +237,7 @@ export default function HomePage() {
             <div className="card-accent bg-card p-6">
               <p className="text-light leading-relaxed">
                 <strong className="text-white">
-                  GDPR fines can reach €20 million or 4% of global annual turnover.
+                  UK GDPR fines can reach £17.5 million or 4% of global annual turnover.
                 </strong>{" "}
                 The ICO has issued over £50 million in enforcement action since 2019.
                 AI-related complaints are rising. The majority of SMBs have no AI governance
@@ -297,7 +297,7 @@ export default function HomePage() {
           </AnimatedSection>
           <AnimatedSection>
             <h2 className="font-bebas text-[clamp(40px,5vw,64px)] tracking-[0.03em] text-white leading-[0.95]">
-              From Call to Clarity in Under a Week
+              From Call to Clarity in Days, Not Months
             </h2>
           </AnimatedSection>
         </div>
@@ -338,9 +338,10 @@ export default function HomePage() {
           </AnimatedSection>
           <AnimatedSection className="flex-1">
             <p className="text-[16px] text-light leading-relaxed mb-8">
-              A full audit of your AI tool usage mapped across six frameworks. Every active
-              compliance failure identified. Clear remediation roadmap — broken into This Week,
-              30 Days, and 90 Days.
+              A full audit of your AI tool usage mapped across six frameworks, seven for
+              recruitment clients including the Equality Act 2010. Every active compliance
+              failure identified. Clear remediation roadmap — broken into This Week, 30 Days,
+              and 90 Days.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -377,8 +378,8 @@ export default function HomePage() {
           </AnimatedSection>
           <AnimatedSection className="flex-1" delay={0.14}>
             <p className="text-[16px] text-light leading-relaxed mb-8">
-              Board-ready. 16-section deep-dive. Everything in Basic plus MITRE ATLAS threat
-              mapping, DPA review, 13-clause Staff AI Policy, and a 90-day reassessment call.
+              Board-ready deep-dive. Everything in Basic plus MITRE ATLAS threat mapping,
+              DPA review, 13-clause Staff AI Policy, and a 90-day reassessment call.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -410,7 +411,7 @@ export default function HomePage() {
         </div>
         <AnimatedSection className="mb-12">
           <h2 className="font-bebas text-[clamp(40px,5vw,64px)] tracking-[0.03em] text-white leading-[0.95]">
-            Seven Frameworks. One Report.
+            Every Framework That Matters. One Report.
           </h2>
         </AnimatedSection>
         <StaggerContainer className="flex flex-wrap gap-3 mb-12">
@@ -420,6 +421,7 @@ export default function HomePage() {
                 name={f.name}
                 colour={f.colour}
                 fullReviewOnly={f.fullReviewOnly}
+                recruitmentOnly={f.recruitmentOnly}
               />
             </StaggerItem>
           ))}
@@ -491,7 +493,7 @@ export default function HomePage() {
         </AnimatedSection>
         <AnimatedSection delay={0.08}>
           <p className="text-[17px] text-light leading-relaxed max-w-[680px] mx-auto mb-10">
-            Book a 20-minute discovery call. We'll map your AI tool usage and tell you exactly
+            Book a 25-minute discovery call. We'll map your AI tool usage and tell you exactly
             where you stand against GDPR and the frameworks that matter. No obligation. Clients
             typically identify at least two active compliance issues they weren't aware of — and
             walk away with immediate free actions they can take the same day.

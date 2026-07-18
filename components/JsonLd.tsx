@@ -9,7 +9,7 @@ export function JsonLd() {
         url: "https://quazarrsecurity.com",
         logo: "https://quazarrsecurity.com/favicon.ico",
         description:
-          "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments against 7 frameworks. Dual expert sign-off. Delivered within a week.",
+          "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks relevant to your sector and tier. Dual expert sign-off. Delivered in 5-7 working days.",
         email: "hello@quazarrsecurity.com",
         areaServed: "GB",
         knowsAbout: [
@@ -48,7 +48,7 @@ export function JsonLd() {
         name: "Basic AI Risk Assessment",
         provider: { "@id": "https://quazarrsecurity.com/#organization" },
         description:
-          "A full 9-section AI risk assessment across 6 frameworks. Every active compliance failure identified. Clear remediation roadmap delivered in 5–7 working days.",
+          "A full AI risk assessment for UK SMBs. Every active compliance failure identified across the frameworks that matter, with a clear remediation roadmap in 5-7 working days.",
         offers: {
           "@type": "Offer",
           price: "750",
@@ -61,7 +61,7 @@ export function JsonLd() {
         name: "Full AI Security Review",
         provider: { "@id": "https://quazarrsecurity.com/#organization" },
         description:
-          "Board-ready 16-section AI security review. Everything in Basic expanded to full depth, plus MITRE ATLAS, DPA audit, and Staff AI Usage Policy. 7–10 working days.",
+          "Board-ready AI security review. Everything in Basic expanded to full depth, plus MITRE ATLAS, DPA audit, and Staff AI Usage Policy. 7-10 working days.",
         offers: {
           "@type": "Offer",
           price: "2500",

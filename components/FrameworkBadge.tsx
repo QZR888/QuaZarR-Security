@@ -2,6 +2,7 @@ interface FrameworkBadgeProps {
   name: string;
   colour?: string;
   fullReviewOnly?: boolean;
+  recruitmentOnly?: boolean;
 }
 
 const colourMap: Record<string, string> = {
@@ -18,6 +19,7 @@ export function FrameworkBadge({
   name,
   colour = "grey",
   fullReviewOnly = false,
+  recruitmentOnly = false,
 }: FrameworkBadgeProps) {
   const colours = colourMap[colour] ?? colourMap.grey;
   return (
@@ -28,6 +30,11 @@ export function FrameworkBadge({
       {fullReviewOnly && (
         <span className="absolute -top-2 -right-2 bg-gold text-surface text-[9px] font-bold px-1.5 py-0.5 uppercase tracking-wider">
           Full
+        </span>
+      )}
+      {recruitmentOnly && (
+        <span className="absolute -top-2 -right-2 bg-red text-white text-[9px] font-bold px-1.5 py-0.5 uppercase tracking-wider">
+          Recruitment
         </span>
       )}
     </div>

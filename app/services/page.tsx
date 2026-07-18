@@ -32,7 +32,7 @@ const fullExtras = [
   "NIST CSF 2.0 full 6-function maturity assessment",
   "GRC framework scored 1–10 across all three pillars",
   "UK GDPR + Data (Use and Access) Act 2025 full gap analysis",
-  "Framework cross-reference matrix — all 7 frameworks",
+  "Framework cross-reference matrix — every framework in scope",
   "Documented Evidence Register for every material finding",
   "Financial exposure quantification against UK GDPR fine ceilings",
   "DPA review — all AI tool providers",
@@ -68,7 +68,8 @@ export default function ServicesPage() {
           <AnimatedSection delay={0.1}>
             <p className="text-[17px] text-light leading-relaxed">
               Three tiers. Clear deliverables. No ambiguity. Every engagement is mapped against
-              7 frameworks and reviewed by both our CEO and CTO before it reaches you.
+              the frameworks relevant to your sector and tier, then reviewed by both our CEO
+              and CTO before it reaches you.
             </p>
           </AnimatedSection>
         </div>
@@ -89,8 +90,9 @@ export default function ServicesPage() {
               <p className="font-bebas text-4xl text-white tracking-wide leading-none mb-1">£750</p>
               <p className="text-xs text-muted mb-6">5–7 working days</p>
               <p className="text-sm text-light leading-relaxed mb-6 flex-1">
-                A full audit of your AI tool usage mapped across six frameworks. Every active
-                compliance failure identified. Clear, prioritised action plan.
+                A full audit of your AI tool usage mapped across six frameworks, seven for
+                recruitment clients including the Equality Act 2010. Every active compliance
+                failure identified. Clear, prioritised action plan.
               </p>
               <ul className="flex flex-col gap-2 mb-8">
                 {basicIncludes.map((item) => (
@@ -119,8 +121,8 @@ export default function ServicesPage() {
               <p className="font-bebas text-4xl text-gold tracking-wide leading-none mb-1">£2,500</p>
               <p className="text-xs text-muted mb-6">7–10 working days</p>
               <p className="text-sm text-light leading-relaxed mb-4 flex-1">
-                Board-ready. 16-section deep-dive. Everything in Basic expanded to full depth,
-                plus MITRE ATLAS, DPA audit, Staff AI Policy, and 90-day reassessment call.
+                Board-ready deep-dive. Everything in Basic expanded to full depth, plus
+                MITRE ATLAS, DPA audit, Staff AI Policy, and 90-day reassessment call.
               </p>
               <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-muted mb-2">
                 Everything in Basic, plus:

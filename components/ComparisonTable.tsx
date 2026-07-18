@@ -57,7 +57,7 @@ const rows: Row[] = [
     quazarr: "price-quazarr",
   },
   {
-    feature: "Turnaround within 1 week",
+    feature: "Turnaround in days, not months",
     enterprise: "weeks",
     generalist: "possibly",
     quazarr: "every",

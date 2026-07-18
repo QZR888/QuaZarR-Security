@@ -8,10 +8,10 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 export const metadata: Metadata = {
   title: "Full AI Security Review — From £2,500",
   description:
-    "Board-ready 16-section review. MITRE ATLAS threat mapping, full framework gap analysis, DPA review, 13-clause Staff AI Policy, and 90-day reassessment call.",
+    "Board-ready review. MITRE ATLAS threat mapping, full framework gap analysis, DPA review, 13-clause Staff AI Policy, and 90-day reassessment call.",
   openGraph: {
     title: "Full AI Security Review — QuaZarR Security",
-    description: "16 sections. 7 frameworks. Board-ready. From £2,500.",
+    description: "Board-ready. Dual expert sign-off. From £2,500.",
   },
 };
 
@@ -31,72 +31,72 @@ const basicIncludes = [
 
 const additionalSections = [
   {
-    number: "10",
+    number: "12",
     title: "MITRE ATLAS Adversarial Threat Mapping",
     body: "Adversarial machine learning threat assessment mapped against MITRE ATLAS, the definitive knowledge base for AI-specific attack techniques. Attack scenarios are written for your sector, not generic theory. Identifies exposure to model inversion, data poisoning, adversarial examples, and AI supply chain attacks.",
   },
   {
-    number: "11",
+    number: "13",
     title: "EU AI Act Deployer Gap Analysis",
     body: "Per-tool, article-by-article deployer obligation analysis under Regulation 2024/1689. AI literacy (Article 4) applies now; transparency duties from August 2026; high-risk deployer obligations from December 2027. Prohibited uses are flagged immediately. Your readiness position is documented and evidenced at each obligation tier.",
   },
   {
-    number: "12",
+    number: "14",
     title: "NIST AI RMF Full 4-Function Assessment",
     body: "Full deep-dive across GOVERN, MAP, MEASURE, and MANAGE with specific findings, evidence requirements, and remediation recommendations per sub-category. Establishes a documented AI risk management baseline suitable for board reporting.",
   },
   {
-    number: "13",
+    number: "15",
     title: "NIST CSF 2.0 Full 6-Function Maturity Assessment",
     body: "IDENTIFY, PROTECT, DETECT, RESPOND, RECOVER, and GOVERN functions all assessed at full depth, with scored maturity levels and targeted uplift actions.",
   },
   {
-    number: "14",
+    number: "16",
     title: "GRC Framework Scored 1–10",
     body: "Governance, Risk, and Compliance individually scored on a 1–10 scale with specific, evidenced findings per pillar. Suitable for inclusion in board risk reporting.",
   },
   {
-    number: "15",
+    number: "17",
     title: "UK GDPR + Data (Use and Access) Act 2025 Full Gap Analysis",
     body: "Comprehensive compliance review covering lawful basis, data subject rights, controller obligations, automated decision-making, and international transfers. Includes the new Articles 22A to 22D introduced by the Data (Use and Access) Act 2025 (DUAA), in force since 5 February 2026, requiring safeguards for AI-influenced significant decisions.",
   },
   {
-    number: "16",
+    number: "18",
     title: "Framework Cross-Reference Matrix",
-    body: "A single matrix mapping every finding across all 7 frameworks simultaneously. Where a gap creates exposure across GDPR, EU AI Act, and OWASP simultaneously, it's flagged and prioritised accordingly.",
+    body: "A single matrix mapping every finding across every framework in scope simultaneously. Where a gap creates exposure across GDPR, EU AI Act, and OWASP simultaneously, it's flagged and prioritised accordingly.",
   },
   {
-    number: "17",
+    number: "19",
     title: "DPA Review",
     body: "All AI tool providers in your inventory reviewed against a minimum-requirements DPA checklist. Gaps, inadequate clauses, and missing agreements identified. Recommendations for remediation provided.",
   },
   {
-    number: "18",
+    number: "20",
     title: "13-Clause Staff AI Usage Policy",
     body: "A legally-structured, ready-to-issue Staff AI Usage Policy covering: permitted tools, prohibited uses, data handling requirements, personal device restrictions, client data protocols, monitoring provisions, and disciplinary framework. Includes a ready-to-run procedure for handling automated decision-making requests under Articles 22A to 22D (DUAA).",
   },
   {
-    number: "19",
+    number: "21",
     title: "90-Day Roadmap with Action Owners",
     body: "Detailed 90-day implementation plan with named action owners, framework tags, and milestone checkpoints. Suitable for use as a project management document by your internal team.",
   },
   {
-    number: "20",
+    number: "22",
     title: "Delivery Walkthrough + 90-Day Reassessment",
     body: "Includes an extended findings walkthrough call on delivery, plus a 90-day reassessment session to review progress against the roadmap and update your compliance position.",
   },
   {
-    number: "21",
+    number: "23",
     title: "Dual Sign-Off: CEO & CTO — Board Ready",
     body: "Full Review reports are formatted for board distribution. Signed by both CEO and CTO. Suitable for presentation to directors, investors, or auditors.",
   },
   {
-    number: "22",
+    number: "24",
     title: "Documented Evidence Register",
     body: "This is evidence-based work, not interview-based. Settings are inspected, vendor agreements reviewed, and workflows observed. Every material finding is supported by a documented Evidence Register, so every score can be challenged, verified, and tracked over time.",
   },
   {
-    number: "23",
+    number: "25",
     title: "Financial Exposure Quantification",
     body: "Every applicable finding is mapped to UK GDPR fine ceilings (up to £17.5 million or 4% of global annual turnover). You understand the potential financial exposure of each gap, not just the regulatory obligation.",
   },
@@ -123,7 +123,7 @@ export default function FullAssessmentPage() {
           <AnimatedSection delay={0.14}>
             <p className="text-light max-w-[600px] leading-relaxed">
               Board-ready. Legally structured. Comprehensive. The Full AI Security Review is a
-              16-section deep-dive assessment — everything in the Basic, expanded to full framework
+              deep-dive assessment — everything in the Basic, expanded to full framework
               depth, plus MITRE ATLAS adversarial threat mapping, a complete DPA audit, and a
               ready-to-issue 13-clause Staff AI Usage Policy.
             </p>

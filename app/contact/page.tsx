@@ -7,7 +7,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 export const metadata: Metadata = {
   title: "Contact — Book a Discovery Call",
   description:
-    "Book a 20-minute discovery call with QuaZarR Security. We map your AI tool usage and tell you exactly where you stand. No obligation.",
+    "Book a 25-minute discovery call with QuaZarR Security. We map your AI tool usage and tell you exactly where you stand. No obligation.",
 };
 
 export default function ContactPage() {
