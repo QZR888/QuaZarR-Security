@@ -87,14 +87,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${bebasNeue.variable} ${dmSans.variable} ${dmMono.variable}`}
     >
-      <Script
-        id="Cookiebot"
-        src="https://consent.cookiebot.com/uc.js"
-        data-cbid="b1efc722-213a-4f5a-8fdc-4f1874054662"
-        data-blockingmode="auto"
-        strategy="beforeInteractive"
-      />
       <body className="flex flex-col min-h-screen w-full overflow-x-hidden">
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="b1efc722-213a-4f5a-8fdc-4f1874054662"
+          data-blockingmode="auto"
+          strategy="beforeInteractive"
+        />
         <JsonLd />
         <Nav />
         <main className="flex-1 w-full overflow-x-hidden">{children}</main>
