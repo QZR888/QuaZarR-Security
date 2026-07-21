@@ -44,7 +44,7 @@ const howItWorks = [
   {
     number: "01",
     title: "Discovery Call",
-    body: "25 minutes. We map your AI tool usage, data flows, current governance, and compliance position. No technical knowledge required on your side.",
+    body: "30 minutes. We map your AI tool usage, data flows, current governance, and compliance position. No technical knowledge required on your side.",
   },
   {
     number: "02",
@@ -493,7 +493,7 @@ export default function HomePage() {
         </AnimatedSection>
         <AnimatedSection delay={0.08}>
           <p className="text-[17px] text-light leading-relaxed max-w-[680px] mx-auto mb-10">
-            Book a 25-minute discovery call. We'll map your AI tool usage and tell you exactly
+            Book a 30-minute discovery call. We'll map your AI tool usage and tell you exactly
             where you stand against GDPR and the frameworks that matter. No obligation. Clients
             typically identify at least two active compliance issues they weren't aware of — and
             walk away with immediate free actions they can take the same day.

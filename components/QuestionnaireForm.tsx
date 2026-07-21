@@ -349,7 +349,7 @@ export function QuestionnaireForm() {
         </h2>
         <p className="text-light max-w-md mx-auto mb-8">
           We've received your risk profile and will send your personalised free report within one
-          working day. One of our team can walk you through your findings live — it takes 25 minutes
+          working day. One of our team can walk you through your findings live — it takes 30 minutes
           and costs nothing.
         </p>
         <a
