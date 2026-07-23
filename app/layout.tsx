@@ -47,6 +47,8 @@ export const metadata: Metadata = {
     "UK AI regulation",
     "OWASP LLM",
     "MITRE ATLAS",
+    "Equality Act AI recruitment",
+    "AI bias recruitment UK",
   ],
   openGraph: {
     siteName: "QuaZarR Security",

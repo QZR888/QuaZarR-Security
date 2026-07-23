@@ -8,10 +8,15 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 export const metadata: Metadata = {
   title: "Full AI Security Review — From £2,500",
   description:
-    "Board-ready review. MITRE ATLAS threat mapping, full framework gap analysis, DPA review, 13-clause Staff AI Policy, and 90-day reassessment call.",
+    "Board-ready review. MITRE ATLAS threat mapping, full framework gap analysis, DPA review, 14-clause Staff AI Policy, and 90-day reassessment call.",
   openGraph: {
     title: "Full AI Security Review — QuaZarR Security",
     description: "Board-ready. Dual expert sign-off. From £2,500.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    description: "AI risk assessments for UK SMBs. Dual expert sign-off. From £2,500.",
+    images: ["https://quazarrsecurity.com/og-image.png"],
   },
 };
 
@@ -59,52 +64,52 @@ const additionalSections = [
   {
     number: "17",
     title: "UK GDPR + Data (Use and Access) Act 2025 Full Gap Analysis",
-    body: "Comprehensive compliance review covering lawful basis, data subject rights, controller obligations, automated decision-making, and international transfers. Includes the new Articles 22A to 22D introduced by the Data (Use and Access) Act 2025 (DUAA), in force since 5 February 2026, requiring safeguards for AI-influenced significant decisions.",
+    body: "Comprehensive compliance review covering lawful basis, data subject rights, controller obligations, automated decision-making, and international transfers. Includes the new Articles 22A to 22D introduced by the Data (Use and Access) Act 2025 (DUAA), in force since 5 February 2026, requiring safeguards for solely automated significant decisions, meaning decisions taken with no meaningful human involvement.",
   },
   {
     number: "18",
-    title: "Framework Cross-Reference Matrix",
-    body: "A single matrix mapping every finding across every framework in scope simultaneously. Where a gap creates exposure across GDPR, EU AI Act, and OWASP simultaneously, it's flagged and prioritised accordingly.",
+    title: "Equality Act 2010 and EHRC Bias Risk Assessment",
+    body: "For recruitment and staffing clients. Liability sits under section 55 of the Equality Act 2010 as an employment service-provider, covering both permanent placement and temporary supply. We assess direct discrimination risk in AI drafted job adverts, indirect discrimination risk where an AI screening or ranking rule operates as a provision, criterion or practice, and your position against the assurance steps DSIT published with the ICO, the EHRC, the REC and APSCo. Includes equal opportunities monitoring data segregation, which is where special category data most often leaks into an AI-assisted selection decision.",
   },
   {
     number: "19",
+    title: "Framework Cross-Reference Matrix",
+    body: "A single matrix mapping every finding across all 7 frameworks, 8 for recruitment clients, simultaneously. Where a gap creates exposure across GDPR, EU AI Act, and OWASP simultaneously, it's flagged and prioritised accordingly.",
+  },
+  {
+    number: "20",
     title: "DPA Review",
     body: "All AI tool providers in your inventory reviewed against a minimum-requirements DPA checklist. Gaps, inadequate clauses, and missing agreements identified. Recommendations for remediation provided.",
   },
   {
-    number: "20",
-    title: "13-Clause Staff AI Usage Policy",
-    body: "A legally-structured, ready-to-issue Staff AI Usage Policy covering: permitted tools, prohibited uses, data handling requirements, personal device restrictions, client data protocols, monitoring provisions, and disciplinary framework. Includes a ready-to-run procedure for handling automated decision-making requests under Articles 22A to 22D (DUAA).",
+    number: "21",
+    title: "14-Clause Staff AI Usage Policy",
+    body: "A legally-structured, ready-to-issue Staff AI Usage Policy covering: approved tools, data input restrictions, session isolation, automated decision-making and human oversight, output validation, bias and discrimination checks, transparency on AI-generated content, human approval for automated systems, incident reporting, staff training, new tool vetting, and a disciplinary framework. Includes a ready-to-run procedure for handling automated decision-making requests under Articles 22A to 22D (DUAA).",
   },
   {
-    number: "21",
+    number: "22",
     title: "90-Day Roadmap with Action Owners",
     body: "Detailed 90-day implementation plan with named action owners, framework tags, and milestone checkpoints. Suitable for use as a project management document by your internal team.",
   },
   {
-    number: "22",
+    number: "23",
     title: "Delivery Walkthrough + 90-Day Reassessment",
     body: "Includes an extended findings walkthrough call on delivery, plus a 90-day reassessment session to review progress against the roadmap and update your compliance position.",
   },
   {
-    number: "23",
+    number: "24",
     title: "Dual Sign-Off: CEO & CTO — Board Ready",
     body: "Full Review reports are formatted for board distribution. Signed by both CEO and CTO. Suitable for presentation to directors, investors, or auditors.",
   },
   {
-    number: "24",
+    number: "25",
     title: "Documented Evidence Register",
     body: "This is evidence-based work, not interview-based. Settings are inspected, vendor agreements reviewed, and workflows observed. Every material finding is supported by a documented Evidence Register, so every score can be challenged, verified, and tracked over time.",
   },
   {
-    number: "25",
+    number: "26",
     title: "Financial Exposure Quantification",
     body: "Every applicable finding is mapped to UK GDPR fine ceilings (up to £17.5 million or 4% of global annual turnover). You understand the potential financial exposure of each gap, not just the regulatory obligation.",
-  },
-  {
-    number: "26",
-    title: "Equality Act 2010 & EHRC Assessment",
-    body: "For recruitment and staffing clients. A full review of your AI-assisted sourcing, screening, and shortlisting tools against the Equality Act 2010 and the EHRC's guidance on AI in recruitment. Identifies discriminatory or biased automated decisions, indirect discrimination risk, and the documented safeguards required before an AI tool influences who you interview or reject.",
   },
 ];
 
@@ -131,7 +136,7 @@ export default function FullAssessmentPage() {
               Board-ready. Legally structured. Comprehensive. The Full AI Security Review is a
               deep-dive assessment — everything in the Basic, expanded to full framework
               depth, plus MITRE ATLAS adversarial threat mapping, a complete DPA audit, and a
-              ready-to-issue 13-clause Staff AI Usage Policy.
+              ready-to-issue 14-clause Staff AI Usage Policy.
             </p>
           </AnimatedSection>
         </div>

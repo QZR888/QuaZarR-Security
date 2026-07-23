@@ -43,7 +43,7 @@ const sections = [
   {
     number: "06",
     title: "UK GDPR & Data (Use and Access) Act 2025 Compliance Snapshot",
-    body: "A targeted review of your AI-related compliance position under UK GDPR and the Data (Use and Access) Act 2025 (DUAA). DUAA replaced Article 22 UK GDPR with new Articles 22A to 22D, in force since 5 February 2026, requiring safeguards (notice, representations, human intervention, contest) for AI-influenced significant decisions. Includes lawful basis assessment, DPIA requirement identification, and ADM compliance.",
+    body: "A targeted review of your AI-related compliance position under UK GDPR and the Data (Use and Access) Act 2025 (DUAA). DUAA replaced Article 22 UK GDPR with new Articles 22A to 22D, in force since 5 February 2026, requiring safeguards (notice, representations, human intervention, contest) for solely automated significant decisions, meaning decisions taken with no meaningful human involvement. Includes lawful basis assessment, DPIA requirement identification, and ADM compliance.",
   },
   {
     number: "07",

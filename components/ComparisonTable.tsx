@@ -39,6 +39,12 @@ const rows: Row[] = [
     quazarr: "every",
   },
   {
+    feature: "Equality Act 2010 / EHRC bias assessment",
+    enterprise: "yes",
+    generalist: "unlikely",
+    quazarr: "recruitment",
+  },
+  {
     feature: "Staff AI Policy included",
     enterprise: "extra",
     generalist: "no",
@@ -84,6 +90,7 @@ function Cell({ value }: { value: string }) {
     return <span className="text-xs text-muted capitalize">{value}</span>;
   if (value === "extra") return <span className="text-xs text-muted">Extra cost</span>;
   if (value === "full") return <span className="text-xs text-gold">Full Review</span>;
+  if (value === "recruitment") return <span className="text-xs text-gold">Recruitment</span>;
   if (value === "price") return <span className="text-xs text-muted">£15k–50k+</span>;
   if (value === "price-quazarr") return <span className="text-xs text-red font-bold">From £750</span>;
   if (value === "scope") return <span className="text-xs text-muted">Limited scope</span>;

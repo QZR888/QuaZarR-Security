@@ -163,6 +163,7 @@ export default function HomePage() {
               { label: "NIST CSF 2.0", detail: "6-function maturity assessment" },
               { label: "GRC Framework", detail: "Governance, Risk & Compliance scored" },
               { label: "UK GDPR + DUAA 2025", detail: "Article-level gap analysis" },
+              { label: "Equality Act 2010 / EHRC", detail: "Recruitment clients" },
               { label: "MITRE ATLAS", detail: "Full Review only" },
             ].map(({ label, detail }) => (
               <div key={label} className="flex items-center justify-between py-4">
@@ -379,7 +380,7 @@ export default function HomePage() {
           <AnimatedSection className="flex-1" delay={0.14}>
             <p className="text-[16px] text-light leading-relaxed mb-8">
               Board-ready deep-dive. Everything in Basic plus MITRE ATLAS threat mapping,
-              DPA review, 13-clause Staff AI Policy, and a 90-day reassessment call.
+              DPA review, 14-clause Staff AI Policy, and a 90-day reassessment call.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

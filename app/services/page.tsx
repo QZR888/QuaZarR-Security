@@ -36,7 +36,7 @@ const fullExtras = [
   "Documented Evidence Register for every material finding",
   "Financial exposure quantification against UK GDPR fine ceilings",
   "DPA review — all AI tool providers",
-  "13-clause Staff AI Usage Policy + ADM procedure (Articles 22A to 22D)",
+  "14-clause Staff AI Usage Policy + ADM procedure (Articles 22A to 22D)",
   "90-day roadmap with action owners",
   "Extended findings walkthrough on delivery, plus 90-day reassessment session",
   "Dual sign-off: CEO + CTO — board ready",
