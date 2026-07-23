@@ -138,13 +138,24 @@ export default function ServicesPage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-muted mb-2">
                 Everything in Basic, plus:
               </p>
-              <ul className="flex flex-col gap-2 mb-8">
+              <ul className="flex flex-col gap-2 mb-4">
                 {fullExtras.map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <Check className="w-3.5 h-3.5 text-gold shrink-0 mt-1" aria-hidden="true" />
                     <span className="text-xs text-light">{item}</span>
                   </li>
                 ))}
+              </ul>
+              <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-gold mb-2">
+                For recruitment clients:
+              </p>
+              <ul className="flex flex-col gap-2 mb-8">
+                <li className="flex items-start gap-2">
+                  <Check className="w-3.5 h-3.5 text-gold shrink-0 mt-1" aria-hidden="true" />
+                  <span className="text-xs text-light">
+                    Equality Act 2010 / EHRC AI bias assessment
+                  </span>
+                </li>
               </ul>
               <Link
                 href="/contact"

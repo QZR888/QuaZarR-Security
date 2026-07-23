@@ -26,6 +26,7 @@ const basicIncludes = [
   "Prioritised remediation roadmap: This Week / 30 Days / 90 Days",
   "One-page executive summary with overall risk rating",
   "Transparent 5x5 risk scoring methodology",
+  "Equality Act 2010 / EHRC assessment (recruitment clients)",
   "Dual sign-off: CEO + CTO",
 ];
 
