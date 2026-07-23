@@ -70,6 +70,11 @@ const sections = [
     title: "Transparent 5x5 Risk Scoring Methodology",
     body: "Every risk in your register is scored out of 25 using a defined 5x5 matrix: five likelihood levels multiplied by five impact levels, each with explicit anchors. Scores are never subjective. You receive the scoring matrix alongside every finding so you can challenge, verify, and track changes over time.",
   },
+  {
+    number: "12",
+    title: "Equality Act 2010 & EHRC Assessment",
+    body: "For recruitment and staffing clients. We assess your AI-assisted sourcing, screening, and shortlisting tools against the Equality Act 2010 and the EHRC's guidance on AI in recruitment, checking for discriminatory or biased automated decisions, indirect discrimination risk, and the safeguards required before an AI tool influences who you interview or reject.",
+  },
 ];
 
 export default function BasicAssessmentPage() {
@@ -122,25 +127,6 @@ export default function BasicAssessmentPage() {
               </StaggerItem>
             ))}
           </StaggerContainer>
-
-          {/* Recruitment edition */}
-          <AnimatedSection className="mb-12">
-            <div className="bg-card border border-red p-6" style={{ borderTop: "3px solid #cc0000" }}>
-              <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-red mb-2">
-                For Recruitment Clients
-              </p>
-              <h3 className="text-lg font-bold text-white mb-3">
-                Equality Act 2010 and EHRC AI Guidance Assessment
-              </h3>
-              <p className="text-sm text-muted leading-relaxed max-w-[820px]">
-                Recruitment and staffing clients are assessed against an additional framework: the
-                Equality Act 2010 and the EHRC's guidance on AI in recruitment. We review your
-                AI-assisted sourcing, screening, and shortlisting tools for discriminatory or biased
-                automated decisions, indirect discrimination risk, and the safeguards required before
-                an AI tool influences who you interview or reject.
-              </p>
-            </div>
-          </AnimatedSection>
 
           {/* Turnaround box */}
           <AnimatedSection className="mb-12">

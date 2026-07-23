@@ -100,6 +100,11 @@ const additionalSections = [
     title: "Financial Exposure Quantification",
     body: "Every applicable finding is mapped to UK GDPR fine ceilings (up to £17.5 million or 4% of global annual turnover). You understand the potential financial exposure of each gap, not just the regulatory obligation.",
   },
+  {
+    number: "26",
+    title: "Equality Act 2010 & EHRC Assessment",
+    body: "For recruitment and staffing clients. A full review of your AI-assisted sourcing, screening, and shortlisting tools against the Equality Act 2010 and the EHRC's guidance on AI in recruitment. Identifies discriminatory or biased automated decisions, indirect discrimination risk, and the documented safeguards required before an AI tool influences who you interview or reject.",
+  },
 ];
 
 export default function FullAssessmentPage() {
