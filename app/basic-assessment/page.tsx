@@ -5,6 +5,7 @@ import { RedRule } from "@/components/RedRule";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/basic-assessment" },
   title: "Basic AI Risk Assessment — From £750",
   description:
     "A full AI risk assessment for UK SMBs. Every active compliance failure identified across the frameworks that matter, with a clear remediation roadmap in 5-7 working days.",

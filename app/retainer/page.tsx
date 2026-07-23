@@ -5,6 +5,7 @@ import { RedRule } from "@/components/RedRule";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/retainer" },
   title: "Retainer — Ongoing AI Risk Support",
   description:
     "Quarterly reassessments, new AI tool vetting, policy maintenance, and incident response support. Your AI risk doesn't stand still — your protection shouldn't either.",

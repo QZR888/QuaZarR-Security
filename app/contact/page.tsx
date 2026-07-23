@@ -5,6 +5,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/contact" },
   title: "Contact — Book a Discovery Call",
   description:
     "Book a 30 to 45 minute discovery call with QuaZarR Security. We map your AI tool usage and tell you exactly where you stand. No obligation.",

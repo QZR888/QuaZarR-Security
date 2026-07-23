@@ -6,6 +6,7 @@ import { RedRule } from "@/components/RedRule";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/services" },
   title: "Services — AI Risk Assessments",
   description:
     "Three service tiers: Basic AI Risk Assessment from £750, Full AI Security Review from £2,500, and ongoing Retainer support. Multi-framework coverage, dual expert sign-off.",

@@ -6,6 +6,7 @@ import { RedRule } from "@/components/RedRule";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/about" },
   title: "About — The Team Behind QuaZarR Security",
   description:
     "QuaZarR Security was founded to give UK SMBs access to comprehensive AI risk assessments at a price that makes sense. Meet Rowan Money (CEO) and Govend Abdul-Hameed (CTO).",

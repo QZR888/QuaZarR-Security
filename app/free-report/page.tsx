@@ -4,6 +4,7 @@ import { QuestionnaireForm } from "@/components/QuestionnaireForm";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/free-report" },
   title: "Free AI Risk Report",
   description:
     "In under 3 minutes, map your AI exposure across data, compliance, and governance. Receive a personalised risk summary and immediate actions you can take today.",

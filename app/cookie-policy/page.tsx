@@ -7,6 +7,7 @@ import { CookiebotDeclaration } from "@/components/CookiebotDeclaration";
 import { CookiePreferencesButton } from "@/components/CookiePreferencesButton";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/cookie-policy" },
   title: "Cookie Policy",
   description:
     "How QuaZarR Security uses cookies on quazarrsecurity.com, what data is collected, and how to manage your preferences.",

@@ -4,6 +4,7 @@ import { QuoteForm } from "@/components/QuoteForm";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/quote" },
   title: "Request a Quote",
   description:
     "Tell us about your organisation and we'll come back with a scoped recommendation and pricing within one working day.",

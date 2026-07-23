@@ -8,6 +8,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 import { insights } from "@/lib/insights";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/insights" },
   title: "AI Security Insights",
   description:
     "Regular thinking on AI governance, GDPR enforcement, shadow AI risk, and the evolving UK and EU AI regulatory landscape — direct from LinkedIn.",

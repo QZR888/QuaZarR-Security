@@ -5,6 +5,7 @@ import { RedRule } from "@/components/RedRule";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/privacy-policy" },
   title: "Privacy Policy",
   description:
     "QuaZarR Security privacy policy — how we collect, use, and protect your personal information in accordance with UK GDPR.",

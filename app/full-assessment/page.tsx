@@ -6,6 +6,7 @@ import { RedRule } from "@/components/RedRule";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com/full-assessment" },
   title: "Full AI Security Review — From £2,500",
   description:
     "Board-ready review. MITRE ATLAS threat mapping, full framework gap analysis, DPA review, 14-clause Staff AI Policy, and 90-day reassessment call.",
