@@ -94,13 +94,24 @@ export default function ServicesPage() {
                 recruitment clients including the Equality Act 2010. Every active compliance
                 failure identified. Clear, prioritised action plan.
               </p>
-              <ul className="flex flex-col gap-2 mb-8">
+              <ul className="flex flex-col gap-2 mb-4">
                 {basicIncludes.map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <Check className="w-3.5 h-3.5 text-red shrink-0 mt-1" aria-hidden="true" />
                     <span className="text-xs text-light">{item}</span>
                   </li>
                 ))}
+              </ul>
+              <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-red mb-2">
+                For recruitment clients:
+              </p>
+              <ul className="flex flex-col gap-2 mb-8">
+                <li className="flex items-start gap-2">
+                  <Check className="w-3.5 h-3.5 text-red shrink-0 mt-1" aria-hidden="true" />
+                  <span className="text-xs text-light">
+                    Equality Act 2010 / EHRC AI bias assessment
+                  </span>
+                </li>
               </ul>
               <Link
                 href="/contact"
@@ -194,7 +205,7 @@ export default function ServicesPage() {
               What to Expect
             </h2>
             <p className="text-[16px] text-light leading-relaxed mb-4">
-              Every engagement begins with a 30-minute discovery call. No technical knowledge
+              Every engagement begins with a 30 to 45 minute discovery call. No technical knowledge
               required on your side. We map your AI tool usage, data flows, governance position,
               and sector-specific obligations.
             </p>

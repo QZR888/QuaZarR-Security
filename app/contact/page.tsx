@@ -7,7 +7,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 export const metadata: Metadata = {
   title: "Contact — Book a Discovery Call",
   description:
-    "Book a 30-minute discovery call with QuaZarR Security. We map your AI tool usage and tell you exactly where you stand. No obligation.",
+    "Book a 30 to 45 minute discovery call with QuaZarR Security. We map your AI tool usage and tell you exactly where you stand. No obligation.",
 };
 
 export default function ContactPage() {
@@ -26,7 +26,7 @@ export default function ContactPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="text-[17px] text-light leading-relaxed">
-              30 minutes. We map your AI tool usage, data flows, and compliance position. You leave
+              30 to 45 minutes. We map your AI tool usage, data flows, and compliance position. You leave
               with clarity on where you stand and what to do next. No hard sell. No obligation.
             </p>
           </AnimatedSection>
@@ -73,7 +73,7 @@ export default function ContactPage() {
                     "No technical knowledge required",
                     "No obligation to purchase",
                     "Clients typically identify immediate free actions on the call",
-                    "30 minutes via video or phone",
+                    "30 to 45 minutes via video or phone",
                   ].map((point) => (
                     <li key={point} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-red shrink-0 mt-0.5" aria-hidden="true" />
