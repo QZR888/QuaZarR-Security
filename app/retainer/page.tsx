@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "Quarterly reassessments, new AI tool vetting, policy maintenance, and incident response support. Your AI risk doesn't stand still — your protection shouldn't either.",
   openGraph: {
+    url: "https://quazarrsecurity.com/retainer",
     title: "Retainer — QuaZarR Security",
     description: "Ongoing AI risk management for UK SMBs. Quarterly reassessments, policy updates, incident support.",
   },

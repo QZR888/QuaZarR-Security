@@ -10,6 +10,7 @@ import { ComparisonTable } from "@/components/ComparisonTable";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://quazarrsecurity.com" },
   title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
   description:
     "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks that matter: OWASP LLM Top 10, EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR as amended by DUAA 2025, and the Equality Act 2010 for recruitment. Dual expert sign-off. Delivered in 5-7 working days from £750.",

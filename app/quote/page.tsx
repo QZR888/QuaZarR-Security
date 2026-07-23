@@ -8,6 +8,23 @@ export const metadata: Metadata = {
   title: "Request a Quote",
   description:
     "Tell us about your organisation and we'll come back with a scoped recommendation and pricing within one working day.",
+  openGraph: {
+    siteName: "QuaZarR Security",
+    locale: "en_GB",
+    type: "website",
+    url: "https://quazarrsecurity.com/quote",
+    title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
+    description:
+      "AI risk assessments for UK SMBs. Dual expert sign-off. Board-ready reports. From £750.",
+    images: [
+      {
+        url: "https://quazarrsecurity.com/og-image.png",
+        width: 1080,
+        height: 1080,
+        alt: "QuaZarR Security",
+      },
+    ],
+  },
 };
 
 export default function QuotePage() {

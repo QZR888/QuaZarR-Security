@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "QuaZarR Security privacy policy — how we collect, use, and protect your personal information in accordance with UK GDPR.",
   openGraph: {
+    url: "https://quazarrsecurity.com/privacy-policy",
     title: "Privacy Policy | QuaZarR Security",
     description: "How QuaZarR Security collects, uses, and protects your personal information.",
   },

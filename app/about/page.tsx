@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "QuaZarR Security was founded to give UK SMBs access to comprehensive AI risk assessments at a price that makes sense. Meet Rowan Money (CEO) and Govend Abdul-Hameed (CTO).",
   openGraph: {
+    url: "https://quazarrsecurity.com/about",
     title: "About — QuaZarR Security",
     description: "Meet the team: Rowan Money (CEO) and Govend Abdul-Hameed (CTO).",
   },

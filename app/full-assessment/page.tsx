@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Board-ready review. MITRE ATLAS threat mapping, full framework gap analysis, DPA review, 14-clause Staff AI Policy, and 90-day reassessment call.",
   openGraph: {
+    url: "https://quazarrsecurity.com/full-assessment",
     title: "Full AI Security Review — QuaZarR Security",
     description: "Board-ready. Dual expert sign-off. From £2,500.",
   },

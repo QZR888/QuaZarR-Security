@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "A full AI risk assessment for UK SMBs. Every active compliance failure identified across the frameworks that matter, with a clear remediation roadmap in 5-7 working days.",
   openGraph: {
+    url: "https://quazarrsecurity.com/basic-assessment",
     title: "Basic AI Risk Assessment — QuaZarR Security",
     description: "A full AI risk assessment for UK SMBs. Dual expert sign-off. From £750.",
   },

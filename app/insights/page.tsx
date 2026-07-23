@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description:
     "Regular thinking on AI governance, GDPR enforcement, shadow AI risk, and the evolving UK and EU AI regulatory landscape — direct from LinkedIn.",
   openGraph: {
+    url: "https://quazarrsecurity.com/insights",
     title: "AI Security Insights — QuaZarR Security",
     description: "AI governance, GDPR enforcement, shadow AI risk, and UK/EU regulatory intelligence.",
   },

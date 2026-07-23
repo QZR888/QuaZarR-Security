@@ -10,6 +10,23 @@ export const metadata: Metadata = {
   title: "Services — AI Risk Assessments",
   description:
     "Three service tiers: Basic AI Risk Assessment from £750, Full AI Security Review from £2,500, and ongoing Retainer support. Multi-framework coverage, dual expert sign-off.",
+  openGraph: {
+    siteName: "QuaZarR Security",
+    locale: "en_GB",
+    type: "website",
+    url: "https://quazarrsecurity.com/services",
+    title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
+    description:
+      "AI risk assessments for UK SMBs. Dual expert sign-off. Board-ready reports. From £750.",
+    images: [
+      {
+        url: "https://quazarrsecurity.com/og-image.png",
+        width: 1080,
+        height: 1080,
+        alt: "QuaZarR Security",
+      },
+    ],
+  },
 };
 
 const basicIncludes = [

@@ -78,9 +78,6 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  alternates: {
-    canonical: "https://quazarrsecurity.com",
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

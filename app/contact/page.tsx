@@ -9,6 +9,23 @@ export const metadata: Metadata = {
   title: "Contact — Book a Discovery Call",
   description:
     "Book a 30 to 45 minute discovery call with QuaZarR Security. We map your AI tool usage and tell you exactly where you stand. No obligation.",
+  openGraph: {
+    siteName: "QuaZarR Security",
+    locale: "en_GB",
+    type: "website",
+    url: "https://quazarrsecurity.com/contact",
+    title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
+    description:
+      "AI risk assessments for UK SMBs. Dual expert sign-off. Board-ready reports. From £750.",
+    images: [
+      {
+        url: "https://quazarrsecurity.com/og-image.png",
+        width: 1080,
+        height: 1080,
+        alt: "QuaZarR Security",
+      },
+    ],
+  },
 };
 
 export default function ContactPage() {

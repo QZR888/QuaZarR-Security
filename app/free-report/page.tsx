@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "In under 3 minutes, map your AI exposure across data, compliance, and governance. Receive a personalised risk summary and immediate actions you can take today.",
   openGraph: {
+    url: "https://quazarrsecurity.com/free-report",
     title: "Free AI Risk Report — QuaZarR Security",
     description: "Map your AI exposure in 3 minutes. Personalised risk summary. Free.",
   },

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "How QuaZarR Security uses cookies on quazarrsecurity.com, what data is collected, and how to manage your preferences.",
   openGraph: {
+    url: "https://quazarrsecurity.com/cookie-policy",
     title: "Cookie Policy | QuaZarR Security",
     description: "How QuaZarR Security uses cookies and how to manage your preferences.",
   },
