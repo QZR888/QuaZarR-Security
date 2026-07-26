@@ -166,7 +166,7 @@ const termlyHTML = `
 <li data-custom-class="body_text" style="line-height:1.5;"><span style="font-size:15px;color:rgb(89,89,89);"><strong>Communicate and Chat with Users</strong></span>
 <div style="margin-left:40px;"><span style="font-size:15px;color:rgb(89,89,89);"><span data-custom-class="body_text">EmailJS</span></span></div></li>
 <li data-custom-class="body_text" style="line-height:1.5;"><span style="font-size:15px;color:rgb(89,89,89);"><strong>Functionality and Infrastructure Optimisation</strong></span>
-<div style="margin-left:40px;"><span style="font-size:15px;color:rgb(89,89,89);"><span data-custom-class="body_text">Termly.io and Cookiebot</span></span></div></li>
+<div style="margin-left:40px;"><span style="font-size:15px;color:rgb(89,89,89);"><span data-custom-class="body_text">Cookiebot</span></span></div></li>
 <li data-custom-class="body_text" style="line-height:1.5;"><span style="font-size:15px;color:rgb(89,89,89);"><strong>Website Hosting</strong></span>
 <div style="margin-left:40px;"><span style="font-size:15px;color:rgb(89,89,89);"><span data-custom-class="body_text">Github Pages and Vercel</span></span></div></li>
 </ul>
@@ -292,9 +292,9 @@ const termlyHTML = `
 
 <div id="request" style="line-height:1.5;"><strong><span data-custom-class="heading_1"><h2>15. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2></span></strong>
 <span style="font-size:15px;color:rgb(89,89,89);"><span data-custom-class="body_text">Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please visit: <a target="_blank" data-custom-class="link" href="https://quazarrsecurity.com/contact">https://quazarrsecurity.com/contact</a>.</span></span></div>
-<div style="display:none;"><a class="privacy123" href="https://app.termly.io/dsar/be2daf6d-d8ea-468d-8789-610e991a5da0"></a></div>
+
 <div style="line-height:1.5;"><br></div>
-<div><span data-custom-class="body_text">This Privacy Policy was created using Termly's </span><a href="https://termly.io/products/privacy-policy-generator/" target="_blank" rel="noopener external" data-custom-class="link">Privacy Policy Generator</a>.</div>
+
 </div>
 `;
 
