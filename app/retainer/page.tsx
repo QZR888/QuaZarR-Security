@@ -35,7 +35,7 @@ const retainerItems = [
   {
     number: "04",
     title: "Written Regulatory Alerts",
-    body: "We monitor OWASP LLM Top 10, NIST AI RMF, EU AI Act guidance, ICO enforcement trends, and MITRE ATLAS. When something relevant to your business changes, you receive a written alert with recommended actions.",
+    body: "We monitor the OWASP LLM Top 10, NIST AI RMF, EU AI Act guidance, ICO enforcement trends, and MITRE ATLAS. When something relevant to your business changes, you receive a written alert with recommended actions. When OWASP published the 2026 edition on 3 August 2026 and renumbered eight of the ten entries, our templates were migrated and verified against it.",
   },
   {
     number: "05",

@@ -46,6 +46,7 @@ export const metadata: Metadata = {
     "AI compliance assessment",
     "UK AI regulation",
     "OWASP LLM",
+    "OWASP LLM Top 10 2026",
     "MITRE ATLAS",
     "Equality Act AI recruitment",
     "AI bias recruitment UK",

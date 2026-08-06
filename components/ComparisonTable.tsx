@@ -9,7 +9,7 @@ interface Row {
 
 const rows: Row[] = [
   {
-    feature: "OWASP LLM Top 10 assessment",
+    feature: "OWASP LLM Top 10 (2026) assessment",
     enterprise: "yes",
     generalist: "rarely",
     quazarr: "every",

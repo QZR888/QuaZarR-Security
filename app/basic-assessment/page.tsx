@@ -29,8 +29,8 @@ const sections = [
   },
   {
     number: "03",
-    title: "OWASP LLM Top 10 (2025) Assessment",
-    body: "All 10 vulnerability categories assessed against your current tool usage and deployment. Includes prompt injection, improper output handling (LLM05), sensitive information disclosure, and data and model poisoning risks.",
+    title: "OWASP LLM Top 10 (2026) Assessment",
+    body: "All 10 vulnerability categories assessed against your current tool usage and deployment, using the 2026 edition published on 3 August 2026. Includes prompt injection (LLM01), sensitive information disclosure (LLM02), excessive agency (LLM03), data and model poisoning (LLM05), hidden context exposure (LLM08), and improper output handling (LLM10). The 2026 edition renumbered eight of the ten entries, so findings carry the numbering your auditor or insurer will expect.",
   },
   {
     number: "04",

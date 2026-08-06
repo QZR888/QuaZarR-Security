@@ -81,7 +81,7 @@ export function Footer() {
             </Link>
           </p>
           <p className="text-[11px] text-subtle leading-relaxed">
-            AI risk assessments mapped against OWASP LLM Top 10, EU AI Act, NIST AI RMF,
+            AI risk assessments mapped against OWASP LLM Top 10 (2026), EU AI Act, NIST AI RMF,
             NIST CSF 2.0, GRC, UK GDPR, DUAA 2025, the Equality Act 2010, and MITRE ATLAS.
           </p>
         </div>

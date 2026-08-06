@@ -109,7 +109,7 @@ function generateFindings(
   }
   if (noApproval && tools.length > 0 && !tools.includes("none")) {
     findings.push(
-      "No AI tool approval process exists before adoption. Shadow AI risk is active: staff are onboarding tools without security review, DPA checks, or authorisation. This is a direct OWASP LLM Top 10 vulnerability (LLM09: Misinformation / Insecure Plugin Design)."
+      "No AI tool approval process exists before adoption. Shadow AI risk is active: staff are onboarding tools without security review, DPA checks, or authorisation. This maps to LLM04:2026 Supply Chain in the OWASP LLM Top 10 (2026)."
     );
   }
   if (hasNoGov && tools.length >= 2) {
@@ -585,7 +585,7 @@ export function QuestionnaireForm() {
             <div className="border border-divider bg-card p-5 mb-8">
               <p className="text-sm text-light leading-relaxed">
                 This is your surface-level risk profile. Your full free report maps these findings
-                against the specific GDPR articles, OWASP LLM vulnerabilities, and EU AI Act
+                against the specific GDPR articles, OWASP LLM Top 10 (2026) vulnerabilities, and EU AI Act
                 obligations that apply to your business — with immediate actions you can take this
                 week.
               </p>

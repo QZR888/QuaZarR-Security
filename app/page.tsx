@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com" },
   title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
   description:
-    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks that matter: OWASP LLM Top 10, EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR as amended by DUAA 2025, and the Equality Act 2010 for recruitment. Dual expert sign-off. Delivered in 5-7 working days from £750.",
+    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks that matter: OWASP LLM Top 10 (2026), EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR as amended by DUAA 2025, and the Equality Act 2010 for recruitment. Dual expert sign-off. Delivered in 5-7 working days from £750.",
   openGraph: {
     title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
     description:
@@ -70,8 +70,8 @@ const whyCards = [
     body: "Every assessment is independently reviewed by our CEO (client engagement, commercial delivery) and CTO (technical validation, framework accuracy). Two expert perspectives in one report.",
   },
   {
-    title: "Current Frameworks — Including DUAA 2025",
-    body: "We incorporate the Data (Use and Access) Act 2025 alongside the EU AI Act. Competitors haven't updated their products to reflect either.",
+    title: "Current Editions, Not Last Year's",
+    body: "We assess against the OWASP LLM Top 10 2026 edition, published 3 August 2026, alongside the Data (Use and Access) Act 2025 and the EU AI Act. An assessment still citing 2025 OWASP numbering is working from a superseded list.",
   },
   {
     title: "Built for SMBs — Not Enterprise",
@@ -84,7 +84,7 @@ const whyCards = [
 ];
 
 const frameworks = [
-  { name: "OWASP LLM Top 10 (2025)", colour: "red" },
+  { name: "OWASP LLM Top 10 (2026)", colour: "red" },
   { name: "EU AI Act (2024/1689)", colour: "blue" },
   { name: "NIST AI RMF (AI 100-1)", colour: "navy" },
   { name: "NIST CSF 2.0 (2024)", colour: "green" },
@@ -110,7 +110,17 @@ export default function HomePage() {
         {/* Left: copy */}
         <div className="flex flex-col justify-center px-12 lg:px-20 py-24">
           <AnimatedSection delay={0.05}>
-            <SectionLabel className="mb-6">AI Cybersecurity Consultancy · UK</SectionLabel>
+            <SectionLabel className="mb-4">AI Cybersecurity Consultancy · UK</SectionLabel>
+          </AnimatedSection>
+          <AnimatedSection delay={0.08}>
+            <div className="inline-block self-start border border-red px-4 py-3 mb-6">
+              <p className="text-red text-[11px] font-bold uppercase tracking-[0.12em]">
+                Assessed against OWASP LLM Top 10 (2026)
+              </p>
+              <p className="text-muted text-[10px] uppercase tracking-[0.1em] mt-1">
+                Published 3 August 2026
+              </p>
+            </div>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <h1 className="font-bebas text-[clamp(56px,7.5vw,100px)] leading-[0.92] tracking-[0.03em] text-white mb-8">
@@ -123,7 +133,7 @@ export default function HomePage() {
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.18}>
-            <p className="text-[18px] text-light leading-relaxed max-w-[580px] mb-10">
+            <p className="text-[18px] text-light leading-relaxed max-w-[580px] mb-8">
               We tell you exactly where — and how to fix it. Structured AI risk assessments for UK
               SMBs in recruitment, legal, finance, HR, and accountancy. Board-ready reports. Dual
               expert sign-off. Delivered in 5-7 working days.
@@ -158,7 +168,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col divide-y divide-divider mb-10">
             {[
-              { label: "OWASP LLM Top 10", detail: "All 10 categories assessed" },
+              { label: "OWASP LLM Top 10 (2026)", detail: "All 10 categories, current edition" },
               { label: "EU AI Act 2024/1689", detail: "Full risk classification per tool" },
               { label: "NIST AI RMF", detail: "4-function maturity assessment" },
               { label: "NIST CSF 2.0", detail: "6-function maturity assessment" },
@@ -428,6 +438,20 @@ export default function HomePage() {
             </StaggerItem>
           ))}
         </StaggerContainer>
+        <AnimatedSection className="mb-8">
+          <div className="card-accent bg-card px-6 py-5 max-w-[800px]">
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-red mb-2">
+              OWASP LLM Top 10 (2026) · Published 3 August 2026
+            </p>
+            <p className="text-[15px] text-light leading-relaxed">
+              The 2026 edition renumbered eight of the ten entries. All six of our report templates
+              were migrated and verified against it. Two things follow for you. Your report will not
+              be out of date the week you receive it, and every finding carries the numbering your
+              auditor, insurer or enterprise customer will expect from now on. An assessment still
+              citing 2025 numbering is working from a superseded list.
+            </p>
+          </div>
+        </AnimatedSection>
         <AnimatedSection>
           <p className="text-[16px] text-muted max-w-[800px] leading-relaxed">
             Enterprise consultancies charge £15,000–50,000 for equivalent multi-framework coverage

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const basicIncludes = [
   "Complete AI tool inventory",
   "EU AI Act risk classification (deployer tier)",
-  "OWASP LLM Top 10 assessment",
+  "OWASP LLM Top 10 (2026) assessment",
   "NIST AI RMF & NIST CSF 2.0 maturity snapshot",
   "GRC posture overview",
   "UK GDPR & Data (Use and Access) Act 2025 compliance snapshot",
@@ -76,7 +76,7 @@ const additionalSections = [
   {
     number: "19",
     title: "Framework Cross-Reference Matrix",
-    body: "A single matrix mapping every finding across all 7 frameworks, 8 for recruitment clients, simultaneously. Where a gap creates exposure across GDPR, EU AI Act, and OWASP simultaneously, it's flagged and prioritised accordingly.",
+    body: "A single matrix mapping every finding across all 7 frameworks, 8 for recruitment clients, simultaneously. Where a gap creates exposure across GDPR, EU AI Act, and the OWASP LLM Top 10 (2026) simultaneously, it's flagged and prioritised accordingly.",
   },
   {
     number: "20",

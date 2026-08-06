@@ -18,7 +18,7 @@ export function JsonLd() {
           "GDPR Compliance",
           "NIST AI RMF",
           "NIST CSF",
-          "OWASP LLM Top 10",
+          "OWASP LLM Top 10 (2026)",
           "MITRE ATLAS",
           "AI Governance",
           "UK DUAA 2025",

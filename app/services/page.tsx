@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const basicIncludes = [
   "Complete AI tool inventory",
   "EU AI Act risk classification (deployer tier)",
-  "OWASP LLM Top 10 — all 10 categories",
+  "OWASP LLM Top 10 (2026): all 10 categories",
   "NIST AI RMF & NIST CSF 2.0 maturity snapshot",
   "GRC posture overview — scored",
   "UK GDPR & Data (Use and Access) Act 2025 compliance snapshot",
@@ -84,11 +84,25 @@ export default function ServicesPage() {
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
-            <p className="text-[17px] text-light leading-relaxed">
+            <p className="text-[17px] text-light leading-relaxed mb-8">
               Three tiers. Clear deliverables. No ambiguity. Every engagement is mapped against
               the frameworks relevant to your sector and tier, then reviewed by both our CEO
               and CTO before it reaches you.
             </p>
+          </AnimatedSection>
+          <AnimatedSection delay={0.16}>
+            <div className="card-accent bg-card px-6 py-5 text-left">
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-red mb-2">
+                Assessed against OWASP LLM Top 10 (2026)
+              </p>
+              <p className="text-[15px] text-light leading-relaxed">
+                OWASP published the 2026 edition on 3 August 2026 and renumbered eight of the ten
+                entries. All six of our report templates were migrated and verified against it
+                before this page went live. You receive a report that is current on the day it
+                lands, with findings numbered the way your auditor, insurer or enterprise customer
+                will expect from now on.
+              </p>
+            </div>
           </AnimatedSection>
         </div>
       </section>
