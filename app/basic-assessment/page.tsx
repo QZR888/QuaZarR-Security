@@ -60,7 +60,7 @@ const sections = [
   {
     number: "09",
     title: "Dual Sign-Off: CEO & CTO",
-    body: "Every Basic Assessment is independently reviewed and signed by our CEO (Rowan Money, commercial delivery and client engagement) and CTO (Govend Abdul-Hameed, technical validation and framework accuracy). Two expert perspectives in one report.",
+    body: "Every Basic Assessment is independently reviewed and signed by our CEO (Rowan Money, commercial delivery and client engagement) and CTO (technical validation and framework accuracy). Two expert perspectives in one report.",
   },
   {
     number: "10",

@@ -29,11 +29,6 @@ export function JsonLd() {
             name: "Rowan Money",
             jobTitle: "CEO",
           },
-          {
-            "@type": "Person",
-            name: "Govend Abdul-Hameed",
-            jobTitle: "CTO",
-          },
         ],
       },
       {

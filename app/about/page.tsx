@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com/about" },
   title: "About — The Team Behind QuaZarR Security",
   description:
-    "QuaZarR Security was founded to give UK SMBs access to comprehensive AI risk assessments at a price that makes sense. Meet Rowan Money (CEO) and Govend Abdul-Hameed (CTO).",
+    "QuaZarR Security was founded to give UK SMBs access to comprehensive AI risk assessments at a price that makes sense. Meet Rowan Money (CEO) and our CTO.",
   openGraph: {
     url: "https://quazarrsecurity.com/about",
     title: "About — QuaZarR Security",
-    description: "Meet the team: Rowan Money (CEO) and Govend Abdul-Hameed (CTO).",
+    description: "Meet the team: Rowan Money (CEO) and our CTO.",
   },
 };
 
@@ -28,12 +28,12 @@ const founders = [
     ],
   },
   {
-    name: "Govend Abdul-Hameed",
+    name: "Our CTO",
     role: "CTO",
     sub: "Technical Delivery · Framework Accuracy · Validation",
     bio: [
-      "Govend leads all technical delivery and framework accuracy at QuaZarR Security. His academic background in cybersecurity and professional certifications underpin the technical rigour of every assessment we produce.",
-      "Every report that leaves QuaZarR Security carries Govend's independent technical review alongside Rowan's commercial sign-off — a dual-validation model that ensures clients receive both expert perspectives in a single, coordinated output.",
+      "Our CTO leads all technical delivery and framework accuracy at QuaZarR Security. His academic background in cybersecurity and professional certifications underpin the technical rigour of every assessment we produce.",
+      "Every report that leaves QuaZarR Security carries our CTO's independent technical review alongside Rowan's commercial sign-off — a dual-validation model that ensures clients receive both expert perspectives in a single, coordinated output.",
     ],
   },
 ];
