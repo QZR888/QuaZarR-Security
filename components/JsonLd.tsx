@@ -9,7 +9,7 @@ export function JsonLd() {
         url: "https://quazarrsecurity.com",
         logo: "https://quazarrsecurity.com/favicon.ico",
         description:
-          "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks relevant to your sector and tier. Dual expert sign-off. Delivered in 5-7 working days.",
+          "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks relevant to your sector and tier. Delivered in 5-7 working days.",
         email: "hello@quazarrsecurity.com",
         areaServed: "GB",
         knowsAbout: [

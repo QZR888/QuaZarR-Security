@@ -51,12 +51,6 @@ const rows: Row[] = [
     quazarr: "full",
   },
   {
-    feature: "Dual expert sign-off",
-    enterprise: "yes",
-    generalist: "no",
-    quazarr: "every",
-  },
-  {
     feature: "SMB-appropriate pricing",
     enterprise: "price",
     generalist: "scope",

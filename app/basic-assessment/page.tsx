@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://quazarrsecurity.com/basic-assessment",
     title: "Basic AI Risk Assessment — QuaZarR Security",
-    description: "A full AI risk assessment for UK SMBs. Dual expert sign-off. From £750.",
+    description: "A full AI risk assessment for UK SMBs. From £750.",
   },
 };
 
@@ -59,8 +59,8 @@ const sections = [
   },
   {
     number: "09",
-    title: "Dual Sign-Off: CEO & CTO",
-    body: "Every Basic Assessment is independently reviewed and signed by our CEO (Rowan Money, commercial delivery and client engagement) and CTO (technical validation and framework accuracy). Two expert perspectives in one report.",
+    title: "Founder-Led Delivery",
+    body: "The person who runs your discovery call is the person who writes your report. No account managers, no handoffs, no junior analysts. You deal directly with the founder of QuaZarR Security from first call to final delivery.",
   },
   {
     number: "10",

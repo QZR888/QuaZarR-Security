@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com" },
   title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
   description:
-    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks that matter: OWASP LLM Top 10 (2026), EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR as amended by DUAA 2025, and the Equality Act 2010 for recruitment. Dual expert sign-off. Delivered in 5-7 working days from £750.",
+    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks that matter: OWASP LLM Top 10 (2026), EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR as amended by DUAA 2025, and the Equality Act 2010 for recruitment. Delivered in 5-7 working days from £750.",
   openGraph: {
     title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
     description:
-      "Structured AI risk assessments for UK SMBs. Dual expert sign-off. From £750.",
+      "Structured AI risk assessments for UK SMBs. From £750.",
     url: "https://quazarrsecurity.com",
   },
 };
@@ -37,7 +37,7 @@ const jsonLd = {
 const stats = [
   { value: "8", label: "Frameworks at Full Scope" },
   { value: "5", label: "Working Days Turnaround (Basic)" },
-  { value: "2", label: "Expert Sign-offs On Every Report" },
+  { value: "12", label: "Deliverables in Every Assessment" },
   { value: "£750", label: "Starting Price (vs £15k–50k Enterprise)" },
 ];
 
@@ -50,7 +50,7 @@ const howItWorks = [
   {
     number: "02",
     title: "Assessment & Report",
-    body: "We map your situation against every framework relevant to your sector and tier. Both our CEO and CTO independently review and sign off before it reaches you.",
+    body: "We map your situation against every framework relevant to your sector and tier. The person who ran your discovery call writes the report, so nothing is lost in a handover.",
   },
   {
     number: "03",
@@ -66,8 +66,8 @@ const howItWorks = [
 
 const whyCards = [
   {
-    title: "Dual Sign-Off on Every Report",
-    body: "Every assessment is independently reviewed by our CEO (client engagement, commercial delivery) and CTO (technical validation, framework accuracy). Two expert perspectives in one report.",
+    title: "Founder-Led, Start to Finish",
+    body: "The person on your discovery call is the person who writes your report. No account managers, no handoffs, no junior analysts learning on your engagement. At enterprise consultancies you rarely meet whoever does the actual work.",
   },
   {
     title: "Current Editions, Not Last Year's",
@@ -135,8 +135,8 @@ export default function HomePage() {
           <AnimatedSection delay={0.18}>
             <p className="text-[18px] text-light leading-relaxed max-w-[580px] mb-8">
               We tell you exactly where — and how to fix it. Structured AI risk assessments for UK
-              SMBs in recruitment, legal, finance, HR, and accountancy. Board-ready reports. Dual
-              expert sign-off. Delivered in 5-7 working days.
+              SMBs in recruitment, legal, finance, HR, and accountancy. Board-ready reports.
+              Delivered in 5-7 working days.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.24}>
@@ -456,7 +456,7 @@ export default function HomePage() {
           <p className="text-[16px] text-muted max-w-[800px] leading-relaxed">
             Enterprise consultancies charge £15,000–50,000 for equivalent multi-framework coverage
             and require separate specialists per discipline. We deliver a fully cross-referenced,
-            coordinated assessment as one coherent report — reviewed by both our CEO and CTO.
+            coordinated assessment as one coherent report.
           </p>
         </AnimatedSection>
       </section>

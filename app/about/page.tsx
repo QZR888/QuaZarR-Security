@@ -7,13 +7,13 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com/about" },
-  title: "About — The Team Behind QuaZarR Security",
+  title: "About — The Founder Behind QuaZarR Security",
   description:
-    "QuaZarR Security was founded to give UK SMBs access to comprehensive AI risk assessments at a price that makes sense. Meet Rowan Money (CEO) and our CTO.",
+    "QuaZarR Security was founded to give UK SMBs access to comprehensive AI risk assessments at a price that makes sense. Meet Rowan Money, founder and CEO.",
   openGraph: {
     url: "https://quazarrsecurity.com/about",
     title: "About — QuaZarR Security",
-    description: "Meet the team: Rowan Money (CEO) and our CTO.",
+    description: "Meet Rowan Money, founder and CEO of QuaZarR Security.",
   },
 };
 
@@ -21,19 +21,11 @@ const founders = [
   {
     name: "Rowan Money",
     role: "CEO",
-    sub: "Client Engagement · Commercial Delivery · Brand",
+    sub: "Founder · Assessment Delivery · Client Engagement",
     bio: [
-      "Rowan leads all client relationships, commercial strategy, and business development at QuaZarR Security. With a background spanning entrepreneurship, digital product development, and brand building, he brings a rare combination of strategic clarity and communication precision to every client engagement.",
-      "Rowan handles the full client journey — from initial scoping through to report delivery and ongoing relationship management — ensuring every output is positioned clearly, acted on decisively, and followed through completely.",
-    ],
-  },
-  {
-    name: "Our CTO",
-    role: "CTO",
-    sub: "Technical Delivery · Framework Accuracy · Validation",
-    bio: [
-      "Our CTO leads all technical delivery and framework accuracy at QuaZarR Security. His academic background in cybersecurity and professional certifications underpin the technical rigour of every assessment we produce.",
-      "Every report that leaves QuaZarR Security carries our CTO's independent technical review alongside Rowan's commercial sign-off — a dual-validation model that ensures clients receive both expert perspectives in a single, coordinated output.",
+      "Rowan founded QuaZarR Security and runs every engagement personally. His background spans entrepreneurship, digital product development, and brand building, which is why the reports are written to be acted on by a business owner rather than interpreted by a legal team.",
+      "The person on your discovery call is the person who writes your report. No account managers, no handoffs, no junior analysts learning on your engagement. He handles the full journey: initial scoping, the assessment itself, the risk register, the remediation roadmap, and the delivery walkthrough.",
+      "At enterprise consultancies you rarely meet whoever does the actual work. Here every finding traces back to one person who can explain it, defend it, and help you act on it.",
     ],
   },
 ];
@@ -44,8 +36,8 @@ const pillars = [
     body: "Enterprise AI security consultancies price UK SMBs out of the market. Generalist IT consultants lack the framework depth. We built the product that fills that gap — comprehensive, current, and priced for the businesses that actually need it.",
   },
   {
-    title: "Dual Expertise By Design",
-    body: "The CEO-CTO sign-off model isn't a nice-to-have — it's structural. Every assessment is reviewed from two distinct expert perspectives before it reaches a client. That's not standard. That's QuaZarR Security.",
+    title: "Founder-Led By Design",
+    body: "One person runs the discovery call, does the assessment, and writes the report. That is not a limitation, it is the control. Every finding traces back to someone who can explain and defend it.",
   },
   {
     title: "Current By Construction",
@@ -60,7 +52,7 @@ export default function AboutPage() {
       <section className="w-full py-24 px-8 lg:px-16 hero-grid-bg">
         <div className="max-w-3xl mx-auto text-center">
           <AnimatedSection>
-            <SectionLabel className="mb-6 flex justify-center">The Team</SectionLabel>
+            <SectionLabel className="mb-6 flex justify-center">The Founder</SectionLabel>
             <div className="flex justify-center mb-6">
               <Image
                 src="/og-image.png"
@@ -92,10 +84,10 @@ export default function AboutPage() {
 
       <RedRule />
 
-      {/* Founder cards */}
+      {/* Founder */}
       <section className="w-full py-24 px-8 lg:px-16">
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-24">
+          <div className="grid grid-cols-1 gap-8 mb-24">
             {founders.map(({ name, role, sub, bio }, i) => (
               <AnimatedSection key={name} delay={i * 0.08}>
                 <div

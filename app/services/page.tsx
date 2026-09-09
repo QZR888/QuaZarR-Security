@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com/services" },
   title: "Services — AI Risk Assessments",
   description:
-    "Three service tiers: Basic AI Risk Assessment from £750, Full AI Security Review from £2,500, and ongoing Retainer support. Multi-framework coverage, dual expert sign-off.",
+    "Three service tiers: Basic AI Risk Assessment from £750, Full AI Security Review from £2,500, and ongoing Retainer support. Multi-framework coverage.",
   openGraph: {
     siteName: "QuaZarR Security",
     locale: "en_GB",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://quazarrsecurity.com/services",
     title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
     description:
-      "AI risk assessments for UK SMBs. Dual expert sign-off. Board-ready reports. From £750.",
+      "AI risk assessments for UK SMBs. Board-ready reports. From £750.",
     images: [
       {
         url: "https://quazarrsecurity.com/og-image.png",
@@ -40,7 +40,6 @@ const basicIncludes = [
   "Remediation roadmap — This Week / 30 Days / 90 Days",
   "One-page executive summary with overall risk rating",
   "Transparent 5x5 risk scoring methodology",
-  "Dual sign-off: CEO + CTO",
 ];
 
 const fullExtras = [
@@ -57,7 +56,6 @@ const fullExtras = [
   "14-clause Staff AI Usage Policy + ADM procedure (Articles 22A to 22D)",
   "90-day roadmap with action owners",
   "Extended findings walkthrough on delivery, plus 90-day reassessment session",
-  "Dual sign-off: CEO + CTO — board ready",
 ];
 
 const retainerItems = [
@@ -86,8 +84,7 @@ export default function ServicesPage() {
           <AnimatedSection delay={0.1}>
             <p className="text-[17px] text-light leading-relaxed mb-8">
               Three tiers. Clear deliverables. No ambiguity. Every engagement is mapped against
-              the frameworks relevant to your sector and tier, then reviewed by both our CEO
-              and CTO before it reaches you.
+              the frameworks relevant to your sector and tier.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.16}>

@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://quazarrsecurity.com/full-assessment",
     title: "Full AI Security Review — QuaZarR Security",
-    description: "Board-ready. Dual expert sign-off. From £2,500.",
+    description: "Board-ready. From £2,500.",
   },
   twitter: {
     card: "summary_large_image",
-    description: "AI risk assessments for UK SMBs. Dual expert sign-off. From £2,500.",
+    description: "AI risk assessments for UK SMBs. From £2,500.",
     images: ["https://quazarrsecurity.com/og-image.png"],
   },
 };
@@ -34,7 +34,6 @@ const basicIncludes = [
   "One-page executive summary with overall risk rating",
   "Transparent 5x5 risk scoring methodology",
   "Equality Act 2010 / EHRC assessment (recruitment clients)",
-  "Dual sign-off: CEO + CTO",
 ];
 
 const additionalSections = [
@@ -100,8 +99,8 @@ const additionalSections = [
   },
   {
     number: "24",
-    title: "Dual Sign-Off: CEO & CTO — Board Ready",
-    body: "Full Review reports are formatted for board distribution. Signed by both CEO and CTO. Suitable for presentation to directors, investors, or auditors.",
+    title: "Board-Ready Formatting",
+    body: "Full Review reports are formatted for board distribution. Suitable for presentation to directors, investors, or auditors.",
   },
   {
     number: "25",
