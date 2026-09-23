@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com/retainer" },
   title: "Retainer — Ongoing AI Risk Support",
   description:
-    "Quarterly reassessments, new AI tool vetting, policy maintenance, and incident response support. Your AI risk doesn't stand still — your protection shouldn't either.",
+    "Quarterly reassessments, new AI tool vetting, and policy maintenance. Your AI risk doesn't stand still — your protection shouldn't either.",
   openGraph: {
     url: "https://quazarrsecurity.com/retainer",
     title: "Retainer — QuaZarR Security",
-    description: "Ongoing AI risk management for UK SMBs. Quarterly reassessments, policy updates, incident support.",
+    description: "Ongoing AI risk management for UK SMBs. Quarterly reassessments, policy updates, regulatory alerts.",
   },
 };
 
@@ -25,7 +25,7 @@ const retainerItems = [
   {
     number: "02",
     title: "AI Tool Vetting Before Adoption",
-    body: "Before your team adopts any new AI tool, we vet it first: DPA availability, training settings, data residency, EU AI Act classification, and sector-specific red flags. You receive a clear approved, conditional, or rejected verdict within 2 working days. Up to 3 vettings per quarter included; additional vettings at £95 each.",
+    body: "Before your team adopts any new AI tool, we vet it first: DPA availability, training settings, data residency, EU AI Act classification, and sector-specific red flags. You receive a clear approved, conditional, or rejected verdict within 5 working days. Up to 3 vettings per quarter included; additional vettings at £95 each.",
   },
   {
     number: "03",
@@ -35,17 +35,12 @@ const retainerItems = [
   {
     number: "04",
     title: "Written Regulatory Alerts",
-    body: "We monitor the OWASP LLM Top 10, NIST AI RMF, EU AI Act guidance, ICO enforcement trends, and MITRE ATLAS. When something relevant to your business changes, you receive a written alert with recommended actions. When OWASP published the 2026 edition on 3 August 2026 and renumbered eight of the ten entries, our templates were migrated and verified against it.",
+    body: "We monitor the OWASP LLM Top 10, NIST AI RMF, EU AI Act guidance, and ICO enforcement trends. When something relevant to your business changes, you receive a written alert with recommended actions. When OWASP published the 2026 edition on 3 August 2026 and renumbered eight of the ten entries, our templates were migrated and verified against it.",
   },
   {
     number: "05",
     title: "Advisory Hours",
     body: "2 advisory hours included per quarter for questions, scenario reviews, or policy guidance. Available by email, call, or video. Same-working-day response to any request received before 2pm.",
-  },
-  {
-    number: "06",
-    title: "Incident Response Support",
-    body: "If an AI-related data incident, security concern, or regulatory enquiry arises, we engage the same working day. The first 2 hours of incident response advisory are included in your retainer.",
   },
 ];
 
@@ -83,9 +78,12 @@ export default function RetainerPage() {
             <SectionLabel>What the Retainer Covers</SectionLabel>
           </AnimatedSection>
 
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+          <StaggerContainer className="flex flex-wrap justify-center gap-6 mb-20">
             {retainerItems.map(({ number, title, body }) => (
-              <StaggerItem key={number}>
+              <StaggerItem
+                key={number}
+                className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+              >
                 <div className="card-accent bg-card p-6 h-full">
                   <p className="font-bebas text-4xl text-red tracking-wide mb-3">{number}</p>
                   <h3 className="text-sm font-bold uppercase tracking-[0.06em] text-white mb-3">

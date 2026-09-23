@@ -86,7 +86,7 @@ function Cell({ value }: { value: string }) {
   if (value === "full") return <span className="text-xs text-gold">Full Review</span>;
   if (value === "recruitment") return <span className="text-xs text-gold">Recruitment</span>;
   if (value === "price") return <span className="text-xs text-muted">£15k–50k+</span>;
-  if (value === "price-quazarr") return <span className="text-xs text-red font-bold">From £750</span>;
+  if (value === "price-quazarr") return <span className="text-xs text-red font-bold">From £900</span>;
   if (value === "scope") return <span className="text-xs text-muted">Limited scope</span>;
   if (value === "weeks") return <span className="text-xs text-muted">Weeks–months</span>;
   if (value === "possibly") return <span className="text-xs text-muted">Possibly</span>;

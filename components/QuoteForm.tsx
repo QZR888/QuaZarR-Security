@@ -270,7 +270,7 @@ export function QuoteForm({ defaultTier }: QuoteFormProps) {
         <div className="flex flex-col gap-2">
           {[
             "Basic AI Risk Assessment",
-            "Full AI Security Review",
+            "Full AI Risk Review",
             "Not Sure — Help Me Decide",
           ].map((t) => (
             <label key={t} className="flex items-start gap-3 cursor-pointer">

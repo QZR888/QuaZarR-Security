@@ -35,19 +35,18 @@ export const metadata: Metadata = {
     template: "%s | QuaZarR Security",
   },
   description:
-    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Board-ready reports. From £750.",
+    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Board-ready reports. From £900.",
   keywords: [
     "AI risk assessment UK",
     "EU AI Act compliance",
     "GDPR AI compliance",
     "AI governance UK SMB",
     "NIST AI RMF",
-    "AI cybersecurity consultancy",
+    "AI risk and compliance",
     "AI compliance assessment",
     "UK AI regulation",
     "OWASP LLM",
     "OWASP LLM Top 10 2026",
-    "MITRE ATLAS",
     "Equality Act AI recruitment",
     "AI bias recruitment UK",
   ],
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
     url: "https://quazarrsecurity.com",
     title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
     description:
-      "AI risk assessments for UK SMBs. Board-ready reports. From £750.",
+      "AI risk assessments for UK SMBs. Board-ready reports. From £900.",
     images: [
       {
         url: "https://quazarrsecurity.com/og-image.png",
@@ -72,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
     description:
-      "AI risk assessments for UK SMBs. From £750.",
+      "AI risk assessments for UK SMBs. From £900.",
     images: ["https://quazarrsecurity.com/og-image.png"],
   },
   icons: {

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com/services" },
   title: "Services — AI Risk Assessments",
   description:
-    "Three service tiers: Basic AI Risk Assessment from £750, Full AI Security Review from £2,500, and ongoing Retainer support. Multi-framework coverage.",
+    "Three service tiers: Basic AI Risk Assessment from £900, Full AI Risk Review from £2,500, and ongoing Retainer support. Multi-framework coverage.",
   openGraph: {
     siteName: "QuaZarR Security",
     locale: "en_GB",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://quazarrsecurity.com/services",
     title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
     description:
-      "AI risk assessments for UK SMBs. Board-ready reports. From £750.",
+      "AI risk assessments for UK SMBs. Board-ready reports. From £900.",
     images: [
       {
         url: "https://quazarrsecurity.com/og-image.png",
@@ -33,26 +33,25 @@ const basicIncludes = [
   "Complete AI tool inventory",
   "EU AI Act risk classification (deployer tier)",
   "OWASP LLM Top 10 (2026): all 10 categories",
-  "NIST AI RMF & NIST CSF 2.0 maturity snapshot",
+  "NIST AI RMF maturity snapshot",
   "GRC posture overview — scored",
   "UK GDPR & Data (Use and Access) Act 2025 compliance snapshot",
   "Full risk register with free actions per finding",
   "Remediation roadmap — This Week / 30 Days / 90 Days",
+  "Founder-led delivery from discovery call to report",
   "One-page executive summary with overall risk rating",
   "Transparent 5x5 risk scoring methodology",
 ];
 
 const fullExtras = [
-  "MITRE ATLAS adversarial threat mapping (sector-specific scenarios)",
   "EU AI Act deployer gap analysis: per tool, per article",
   "NIST AI RMF full 4-function assessment",
-  "NIST CSF 2.0 full 6-function maturity assessment",
   "GRC framework scored 1–10 across all three pillars",
   "UK GDPR + Data (Use and Access) Act 2025 full gap analysis",
   "Framework cross-reference matrix — every framework in scope",
   "Documented Evidence Register for every material finding",
-  "Financial exposure quantification against UK GDPR fine ceilings",
-  "DPA review — all AI tool providers",
+  "Regulatory exposure explained against UK GDPR fine ceilings",
+  "DPA review — up to 10 AI tool providers",
   "14-clause Staff AI Usage Policy + ADM procedure (Articles 22A to 22D)",
   "90-day roadmap with action owners",
   "Extended findings walkthrough on delivery, plus 90-day reassessment session",
@@ -60,11 +59,10 @@ const fullExtras = [
 
 const retainerItems = [
   "Quarterly AI risk reassessment against standing risk register",
-  "Up to 3 tool vettings per quarter (verdict within 2 working days)",
+  "Up to 3 tool vettings per quarter (verdict within 5 working days)",
   "Policy updates within 10 working days of regulatory change",
   "Written regulatory alerts",
   "2 advisory hours per quarter",
-  "Incident response: same-working-day, first 2 hours included",
 ];
 
 export default function ServicesPage() {
@@ -116,12 +114,12 @@ export default function ServicesPage() {
               <h2 className="font-bebas text-3xl tracking-wide text-white mb-2">
                 Basic AI Risk Assessment
               </h2>
-              <p className="font-bebas text-4xl text-white tracking-wide leading-none mb-1">£750</p>
+              <p className="font-bebas text-4xl text-white tracking-wide leading-none mb-1">£900</p>
               <p className="text-xs text-muted mb-6">5–7 working days</p>
               <p className="text-sm text-light leading-relaxed mb-6 flex-1">
-                A full audit of your AI tool usage mapped across six frameworks, seven for
-                recruitment clients including the Equality Act 2010. Every active compliance
-                failure identified. Clear, prioritised action plan.
+                A structured review of your AI tool usage mapped across five frameworks, six for
+                recruitment clients including the Equality Act 2010. Key compliance gaps
+                identified. Clear, prioritised action plan.
               </p>
               <ul className="flex flex-col gap-2 mb-4">
                 {basicIncludes.map((item) => (
@@ -146,7 +144,7 @@ export default function ServicesPage() {
                 href="/contact"
                 className="block text-center bg-red text-white text-xs font-bold uppercase tracking-[0.12em] px-6 py-3 hover:bg-red-dark transition-colors"
               >
-                Get Started — From £750
+                Get Started — From £900
               </Link>
             </div>
           </AnimatedSection>
@@ -156,13 +154,13 @@ export default function ServicesPage() {
             <div className="border border-gold bg-card p-8 h-full flex flex-col">
               <SectionLabel className="mb-4 text-gold">Tier 2</SectionLabel>
               <h2 className="font-bebas text-3xl tracking-wide text-white mb-2">
-                Full AI Security Review
+                Full AI Risk Review
               </h2>
               <p className="font-bebas text-4xl text-gold tracking-wide leading-none mb-1">£2,500</p>
               <p className="text-xs text-muted mb-6">7–10 working days</p>
               <p className="text-sm text-light leading-relaxed mb-4 flex-1">
                 Board-ready deep-dive. Everything in Basic expanded to full depth, plus
-                MITRE ATLAS, DPA audit, Staff AI Policy, and 90-day reassessment call.
+                DPA review, Staff AI Policy, and 90-day reassessment call.
               </p>
               <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-muted mb-2">
                 Everything in Basic, plus:

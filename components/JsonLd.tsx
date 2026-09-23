@@ -17,9 +17,7 @@ export function JsonLd() {
           "EU AI Act Compliance",
           "GDPR Compliance",
           "NIST AI RMF",
-          "NIST CSF",
           "OWASP LLM Top 10 (2026)",
-          "MITRE ATLAS",
           "AI Governance",
           "UK DUAA 2025",
         ],
@@ -43,20 +41,20 @@ export function JsonLd() {
         name: "Basic AI Risk Assessment",
         provider: { "@id": "https://quazarrsecurity.com/#organization" },
         description:
-          "A full AI risk assessment for UK SMBs. Every active compliance failure identified across the frameworks that matter, with a clear remediation roadmap in 5-7 working days.",
+          "A structured AI risk assessment for UK SMBs. Key compliance gaps identified across the frameworks that matter, with a clear remediation roadmap in 5-7 working days.",
         offers: {
           "@type": "Offer",
-          price: "750",
+          price: "900",
           priceCurrency: "GBP",
         },
         url: "https://quazarrsecurity.com/basic-assessment",
       },
       {
         "@type": "Service",
-        name: "Full AI Security Review",
+        name: "Full AI Risk Review",
         provider: { "@id": "https://quazarrsecurity.com/#organization" },
         description:
-          "Board-ready AI security review. Everything in Basic expanded to full depth, plus MITRE ATLAS, DPA audit, and Staff AI Usage Policy. 7-10 working days.",
+          "Board-ready AI risk review. Everything in Basic expanded to full depth, plus DPA review and Staff AI Usage Policy. 7-10 working days.",
         offers: {
           "@type": "Offer",
           price: "2500",

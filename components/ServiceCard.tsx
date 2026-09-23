@@ -22,7 +22,7 @@ export function ServiceCard({ tier, price, turnaround, brief, href }: ServiceCar
       </div>
 
       <h3 className="font-bebas text-3xl tracking-wide text-white mb-1">
-        {isBasic ? "Basic AI Risk Assessment" : "Full AI Security Review"}
+        {isBasic ? "Basic AI Risk Assessment" : "Full AI Risk Review"}
       </h3>
 
       <div className={`text-2xl font-bold mb-1 ${isBasic ? "text-white" : "text-gold"}`}>

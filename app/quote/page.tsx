@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://quazarrsecurity.com/quote",
     title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
     description:
-      "AI risk assessments for UK SMBs. Board-ready reports. From £750.",
+      "AI risk assessments for UK SMBs. Board-ready reports. From £900.",
     images: [
       {
         url: "https://quazarrsecurity.com/og-image.png",

@@ -11,13 +11,13 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com" },
-  title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
+  title: "QuaZarR Security | AI Risk and Compliance for UK SMBs",
   description:
-    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks that matter: OWASP LLM Top 10 (2026), EU AI Act, NIST AI RMF, NIST CSF 2.0, GRC, UK GDPR as amended by DUAA 2025, and the Equality Act 2010 for recruitment. Delivered in 5-7 working days from £750.",
+    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks that matter: OWASP LLM Top 10 (2026), EU AI Act, NIST AI RMF, GRC, UK GDPR as amended by DUAA 2025, and the Equality Act 2010 for recruitment. Delivered in 5-7 working days from £900.",
   openGraph: {
-    title: "QuaZarR Security | AI Cybersecurity for UK SMBs",
+    title: "QuaZarR Security | AI Risk and Compliance for UK SMBs",
     description:
-      "Structured AI risk assessments for UK SMBs. From £750.",
+      "Structured AI risk assessments for UK SMBs. From £900.",
     url: "https://quazarrsecurity.com",
   },
 };
@@ -27,7 +27,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "QuaZarR Security",
   description:
-    "AI cybersecurity consultancy providing structured AI risk assessments for UK SMBs.",
+    "AI risk and compliance consultancy providing structured AI risk assessments for UK SMBs.",
   url: "https://quazarrsecurity.com",
   email: "hello@quazarrsecurity.com",
   areaServed: "GB",
@@ -35,10 +35,10 @@ const jsonLd = {
 };
 
 const stats = [
-  { value: "8", label: "Frameworks at Full Scope" },
+  { value: "6", label: "Frameworks at Full Scope" },
   { value: "5", label: "Working Days Turnaround (Basic)" },
   { value: "12", label: "Deliverables in Every Assessment" },
-  { value: "£750", label: "Starting Price (vs £15k–50k Enterprise)" },
+  { value: "£900", label: "Starting Price (vs £15k–50k Enterprise)" },
 ];
 
 const howItWorks = [
@@ -60,7 +60,7 @@ const howItWorks = [
   {
     number: "04",
     title: "Ongoing Support",
-    body: "Optional retainer for quarterly reassessment, new AI tool vetting, policy maintenance, and incident response support.",
+    body: "Optional retainer for quarterly reassessment, new AI tool vetting, and policy maintenance.",
   },
 ];
 
@@ -87,11 +87,9 @@ const frameworks = [
   { name: "OWASP LLM Top 10 (2026)", colour: "red" },
   { name: "EU AI Act (2024/1689)", colour: "blue" },
   { name: "NIST AI RMF (AI 100-1)", colour: "navy" },
-  { name: "NIST CSF 2.0 (2024)", colour: "green" },
   { name: "GRC Framework", colour: "purple" },
   { name: "UK GDPR & DUAA 2025", colour: "amber" },
   { name: "Equality Act 2010 / EHRC", colour: "grey", recruitmentOnly: true },
-  { name: "MITRE ATLAS", colour: "grey", fullReviewOnly: true },
 ];
 
 export default function HomePage() {
@@ -110,7 +108,7 @@ export default function HomePage() {
         {/* Left: copy */}
         <div className="flex flex-col justify-center px-12 lg:px-20 py-24">
           <AnimatedSection delay={0.05}>
-            <SectionLabel className="mb-4">AI Cybersecurity Consultancy · UK</SectionLabel>
+            <SectionLabel className="mb-4">AI Risk and Compliance Consultancy · UK</SectionLabel>
           </AnimatedSection>
           <AnimatedSection delay={0.08}>
             <div className="inline-block self-start border border-red px-4 py-3 mb-6">
@@ -171,11 +169,9 @@ export default function HomePage() {
               { label: "OWASP LLM Top 10 (2026)", detail: "All 10 categories, current edition" },
               { label: "EU AI Act 2024/1689", detail: "Full risk classification per tool" },
               { label: "NIST AI RMF", detail: "4-function maturity assessment" },
-              { label: "NIST CSF 2.0", detail: "6-function maturity assessment" },
               { label: "GRC Framework", detail: "Governance, Risk & Compliance scored" },
               { label: "UK GDPR + DUAA 2025", detail: "Article-level gap analysis" },
               { label: "Equality Act 2010 / EHRC", detail: "Recruitment clients" },
-              { label: "MITRE ATLAS", detail: "Full Review only" },
             ].map(({ label, detail }) => (
               <div key={label} className="flex items-center justify-between py-4">
                 <span className="text-[15px] font-bold text-white">{label}</span>
@@ -189,7 +185,7 @@ export default function HomePage() {
           >
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-muted mb-1">Starting from</p>
-              <p className="font-bebas text-5xl text-red tracking-wide leading-none">£750</p>
+              <p className="font-bebas text-5xl text-red tracking-wide leading-none">£900</p>
             </div>
             <div className="text-right">
               <p className="text-xs text-muted mb-1">Enterprise equivalent</p>
@@ -345,14 +341,14 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
           <AnimatedSection className="mb-6">
-            <p className="font-bebas text-5xl text-white tracking-wide leading-none mb-2">£750</p>
+            <p className="font-bebas text-5xl text-white tracking-wide leading-none mb-2">£900</p>
             <p className="text-sm text-muted">5–7 working days from discovery call</p>
           </AnimatedSection>
           <AnimatedSection className="flex-1">
             <p className="text-[16px] text-light leading-relaxed mb-8">
-              A full audit of your AI tool usage mapped across six frameworks, seven for
-              recruitment clients including the Equality Act 2010. Every active compliance
-              failure identified. Clear remediation roadmap — broken into This Week, 30 Days,
+              A structured review of your AI tool usage mapped across five frameworks, six for
+              recruitment clients including the Equality Act 2010. Key compliance gaps
+              identified. Clear remediation roadmap — broken into This Week, 30 Days,
               and 90 Days.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -381,7 +377,7 @@ export default function HomePage() {
           </AnimatedSection>
           <AnimatedSection className="mb-6" delay={0.1}>
             <h2 className="font-bebas text-[clamp(40px,4vw,60px)] tracking-[0.03em] text-white leading-[0.95]">
-              Full AI Security Review
+              Full AI Risk Review
             </h2>
           </AnimatedSection>
           <AnimatedSection className="mb-6" delay={0.12}>
@@ -390,8 +386,8 @@ export default function HomePage() {
           </AnimatedSection>
           <AnimatedSection className="flex-1" delay={0.14}>
             <p className="text-[16px] text-light leading-relaxed mb-8">
-              Board-ready deep-dive. Everything in Basic plus MITRE ATLAS threat mapping,
-              DPA review, 14-clause Staff AI Policy, and a 90-day reassessment call.
+              Board-ready deep-dive. Everything in Basic plus DPA review,
+              14-clause Staff AI Policy, and a 90-day reassessment call.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -432,7 +428,6 @@ export default function HomePage() {
               <FrameworkBadge
                 name={f.name}
                 colour={f.colour}
-                fullReviewOnly={f.fullReviewOnly}
                 recruitmentOnly={f.recruitmentOnly}
               />
             </StaggerItem>

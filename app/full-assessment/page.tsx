@@ -7,12 +7,12 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com/full-assessment" },
-  title: "Full AI Security Review — From £2,500",
+  title: "Full AI Risk Review — From £2,500",
   description:
-    "Board-ready review. MITRE ATLAS threat mapping, full framework gap analysis, DPA review, 14-clause Staff AI Policy, and 90-day reassessment call.",
+    "Board-ready review. Full framework gap analysis, DPA review, 14-clause Staff AI Policy, and 90-day reassessment call.",
   openGraph: {
     url: "https://quazarrsecurity.com/full-assessment",
-    title: "Full AI Security Review — QuaZarR Security",
+    title: "Full AI Risk Review — QuaZarR Security",
     description: "Board-ready. From £2,500.",
   },
   twitter: {
@@ -26,11 +26,12 @@ const basicIncludes = [
   "Complete AI tool inventory",
   "EU AI Act risk classification (deployer tier)",
   "OWASP LLM Top 10 (2026) assessment",
-  "NIST AI RMF & NIST CSF 2.0 maturity snapshot",
+  "NIST AI RMF maturity snapshot",
   "GRC posture overview",
   "UK GDPR & Data (Use and Access) Act 2025 compliance snapshot",
   "Full risk register with immediate free actions",
   "Prioritised remediation roadmap: This Week / 30 Days / 90 Days",
+  "Founder-led delivery from discovery call to report",
   "One-page executive summary with overall risk rating",
   "Transparent 5x5 risk scoring methodology",
   "Equality Act 2010 / EHRC assessment (recruitment clients)",
@@ -39,78 +40,68 @@ const basicIncludes = [
 const additionalSections = [
   {
     number: "12",
-    title: "MITRE ATLAS Adversarial Threat Mapping",
-    body: "Adversarial machine learning threat assessment mapped against MITRE ATLAS, the definitive knowledge base for AI-specific attack techniques. Attack scenarios are written for your sector, not generic theory. Identifies exposure to model inversion, data poisoning, adversarial examples, and AI supply chain attacks.",
-  },
-  {
-    number: "13",
     title: "EU AI Act Deployer Gap Analysis",
     body: "Per-tool, article-by-article deployer obligation analysis under Regulation 2024/1689. AI literacy (Article 4) applies now; transparency duties from August 2026; high-risk deployer obligations from December 2027. Prohibited uses are flagged immediately. Your readiness position is documented and evidenced at each obligation tier.",
   },
   {
-    number: "14",
+    number: "13",
     title: "NIST AI RMF Full 4-Function Assessment",
     body: "Full deep-dive across GOVERN, MAP, MEASURE, and MANAGE with specific findings, evidence requirements, and remediation recommendations per sub-category. Establishes a documented AI risk management baseline suitable for board reporting.",
   },
   {
-    number: "15",
-    title: "NIST CSF 2.0 Full 6-Function Maturity Assessment",
-    body: "IDENTIFY, PROTECT, DETECT, RESPOND, RECOVER, and GOVERN functions all assessed at full depth, with scored maturity levels and targeted uplift actions.",
-  },
-  {
-    number: "16",
+    number: "14",
     title: "GRC Framework Scored 1–10",
     body: "Governance, Risk, and Compliance individually scored on a 1–10 scale with specific, evidenced findings per pillar. Suitable for inclusion in board risk reporting.",
   },
   {
-    number: "17",
+    number: "15",
     title: "UK GDPR + Data (Use and Access) Act 2025 Full Gap Analysis",
     body: "Comprehensive compliance review covering lawful basis, data subject rights, controller obligations, automated decision-making, and international transfers. Includes the new Articles 22A to 22D introduced by the Data (Use and Access) Act 2025 (DUAA), in force since 5 February 2026, requiring safeguards for solely automated significant decisions, meaning decisions taken with no meaningful human involvement.",
   },
   {
-    number: "18",
+    number: "16",
     title: "Equality Act 2010 and EHRC Bias Risk Assessment",
     body: "For recruitment and staffing clients. Liability sits under section 55 of the Equality Act 2010 as an employment service-provider, covering both permanent placement and temporary supply. We assess direct discrimination risk in AI drafted job adverts, indirect discrimination risk where an AI screening or ranking rule operates as a provision, criterion or practice, and your position against the assurance steps DSIT published with the ICO, the EHRC, the REC and APSCo. Includes equal opportunities monitoring data segregation, which is where special category data most often leaks into an AI-assisted selection decision.",
   },
   {
-    number: "19",
+    number: "17",
     title: "Framework Cross-Reference Matrix",
-    body: "A single matrix mapping every finding across all 7 frameworks, 8 for recruitment clients, simultaneously. Where a gap creates exposure across GDPR, EU AI Act, and the OWASP LLM Top 10 (2026) simultaneously, it's flagged and prioritised accordingly.",
+    body: "A single matrix mapping every finding across every framework in scope for your sector, simultaneously. Where a gap creates exposure across GDPR, EU AI Act, and the OWASP LLM Top 10 (2026) simultaneously, it's flagged and prioritised accordingly.",
   },
   {
-    number: "20",
+    number: "18",
     title: "DPA Review",
-    body: "All AI tool providers in your inventory reviewed against a minimum-requirements DPA checklist. Gaps, inadequate clauses, and missing agreements identified. Recommendations for remediation provided.",
+    body: "Up to 10 AI tool providers in your inventory reviewed against a minimum-requirements DPA checklist. Gaps, inadequate clauses, and missing agreements identified. Recommendations for remediation provided.",
   },
   {
-    number: "21",
+    number: "19",
     title: "14-Clause Staff AI Usage Policy",
     body: "A legally-structured, ready-to-issue Staff AI Usage Policy covering: approved tools, data input restrictions, session isolation, automated decision-making and human oversight, output validation, bias and discrimination checks, transparency on AI-generated content, human approval for automated systems, incident reporting, staff training, new tool vetting, and a disciplinary framework. Includes a ready-to-run procedure for handling automated decision-making requests under Articles 22A to 22D (DUAA).",
   },
   {
-    number: "22",
+    number: "20",
     title: "90-Day Roadmap with Action Owners",
     body: "Detailed 90-day implementation plan with named action owners, framework tags, and milestone checkpoints. Suitable for use as a project management document by your internal team.",
   },
   {
-    number: "23",
+    number: "21",
     title: "Delivery Walkthrough + 90-Day Reassessment",
     body: "Includes an extended findings walkthrough call on delivery, plus a 90-day reassessment session to review progress against the roadmap and update your compliance position.",
   },
   {
-    number: "24",
+    number: "22",
     title: "Board-Ready Formatting",
     body: "Full Review reports are formatted for board distribution. Suitable for presentation to directors, investors, or auditors.",
   },
   {
-    number: "25",
+    number: "23",
     title: "Documented Evidence Register",
     body: "This is evidence-based work, not interview-based. Settings are inspected, vendor agreements reviewed, and workflows observed. Every material finding is supported by a documented Evidence Register, so every score can be challenged, verified, and tracked over time.",
   },
   {
-    number: "26",
-    title: "Financial Exposure Quantification",
-    body: "Every applicable finding is mapped to UK GDPR fine ceilings (up to £17.5 million or 4% of global annual turnover). You understand the potential financial exposure of each gap, not just the regulatory obligation.",
+    number: "24",
+    title: "Regulatory Exposure Explained",
+    body: "Every applicable finding is explained against the UK GDPR fine ceilings that apply, up to £17.5 million or 4% of global annual turnover. You understand which regime each gap falls under and why it matters. This is context for prioritising remediation, not a predicted fine or liability figure for your business.",
   },
 ];
 
@@ -124,7 +115,7 @@ export default function FullAssessmentPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.06}>
             <h1 className="font-bebas text-[clamp(48px,7vw,80px)] tracking-[0.04em] text-white mb-2">
-              Full AI Security Review
+              Full AI Risk Review
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -134,10 +125,10 @@ export default function FullAssessmentPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.14}>
             <p className="text-light max-w-[600px] leading-relaxed">
-              Board-ready. Legally structured. Comprehensive. The Full AI Security Review is a
+              Board-ready. Legally structured. Comprehensive. The Full AI Risk Review is a
               deep-dive assessment — everything in the Basic, expanded to full framework
-              depth, plus MITRE ATLAS adversarial threat mapping, a complete DPA audit, and a
-              ready-to-issue 14-clause Staff AI Usage Policy.
+              depth, plus a complete DPA review and a ready-to-issue 14-clause Staff AI
+              Usage Policy.
             </p>
           </AnimatedSection>
         </div>

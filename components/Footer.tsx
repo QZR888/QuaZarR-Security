@@ -19,7 +19,7 @@ export function Footer() {
                 Security
               </span>
             </div>
-            <p className="text-sm text-muted">AI Cybersecurity for UK SMBs.</p>
+            <p className="text-sm text-muted">AI Risk and Compliance for UK SMBs.</p>
           </div>
 
           {/* Nav */}
@@ -82,7 +82,11 @@ export function Footer() {
           </p>
           <p className="text-[11px] text-subtle leading-relaxed">
             AI risk assessments mapped against OWASP LLM Top 10 (2026), EU AI Act, NIST AI RMF,
-            NIST CSF 2.0, GRC, UK GDPR, DUAA 2025, the Equality Act 2010, and MITRE ATLAS.
+            GRC, UK GDPR, DUAA 2025, and the Equality Act 2010.
+          </p>
+          <p className="text-[11px] text-subtle leading-relaxed mt-3">
+            QuaZarR Security Ltd. Registered in England and Wales, company number 17454264.
+            Registered office: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.
           </p>
         </div>
       </div>

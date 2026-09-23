@@ -6,13 +6,13 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://quazarrsecurity.com/basic-assessment" },
-  title: "Basic AI Risk Assessment — From £750",
+  title: "Basic AI Risk Assessment — From £900",
   description:
-    "A full AI risk assessment for UK SMBs. Every active compliance failure identified across the frameworks that matter, with a clear remediation roadmap in 5-7 working days.",
+    "A structured AI risk assessment for UK SMBs. Key compliance gaps identified across the frameworks that matter, with a clear remediation roadmap in 5-7 working days.",
   openGraph: {
     url: "https://quazarrsecurity.com/basic-assessment",
     title: "Basic AI Risk Assessment — QuaZarR Security",
-    description: "A full AI risk assessment for UK SMBs. From £750.",
+    description: "A structured AI risk assessment for UK SMBs. From £900.",
   },
 };
 
@@ -34,8 +34,8 @@ const sections = [
   },
   {
     number: "04",
-    title: "NIST AI RMF & NIST CSF 2.0 Maturity Snapshot",
-    body: "A rapid maturity assessment across NIST AI RMF's four functions (GOVERN, MAP, MEASURE, MANAGE) and NIST CSF 2.0's six functions. Establishes your current baseline and identifies the highest-priority gaps.",
+    title: "NIST AI RMF Maturity Snapshot",
+    body: "A rapid maturity assessment across NIST AI RMF's four functions (GOVERN, MAP, MEASURE, MANAGE). Establishes your current baseline and identifies the highest-priority gaps.",
   },
   {
     number: "05",
@@ -94,14 +94,14 @@ export default function BasicAssessmentPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="font-bebas text-3xl tracking-wide text-red mb-6">
-              From £750 · 5–7 Working Days
+              From £900 · 5–7 Working Days
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.14}>
             <p className="text-[17px] text-light leading-relaxed">
-              A full audit of your AI tool usage mapped across six frameworks (seven for
+              A structured review of your AI tool usage mapped across five frameworks (six for
               recruitment clients, including the Equality Act 2010 and EHRC AI guidance).
-              Identifies every active compliance failure and delivers a clear, prioritised
+              Identifies key compliance gaps and delivers a clear, prioritised
               action plan for your business.
             </p>
           </AnimatedSection>
@@ -154,7 +154,7 @@ export default function BasicAssessmentPage() {
                 href="/contact"
                 className="bg-red text-white text-xs font-bold uppercase tracking-[0.12em] px-8 py-4 hover:bg-red-dark transition-colors"
               >
-                Get Started — From £750
+                Get Started — From £900
               </Link>
               <Link
                 href="/quote"
