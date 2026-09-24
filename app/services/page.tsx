@@ -19,7 +19,7 @@ const basicIncludes = [
   "NIST AI RMF maturity snapshot",
   "GRC posture overview: scored",
   "UK GDPR & Data (Use and Access) Act 2025 compliance snapshot",
-  "Full risk register with free actions per finding",
+  "Full risk register with free quick-win actions where available",
   "Remediation roadmap: This Week / 30 Days / 90 Days",
   "Founder-led delivery from discovery call to report",
   "One-page executive summary with overall risk rating",

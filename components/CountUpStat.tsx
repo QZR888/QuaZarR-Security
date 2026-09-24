@@ -8,25 +8,39 @@ interface CountUpStatProps {
   label: string;
 }
 
+/**
+ * Splits a stat into an animatable prefix, number and suffix.
+ *
+ * Returns null when the value cannot be counted up: either it holds no number
+ * at all, or it holds more than one (a range such as "5 to 7", where animating
+ * only the first number would read as a different range mid-flight).
+ */
+function parseStat(value: string) {
+  const m = value.match(/^(\D*)(\d+)(.*)$/);
+  if (!m || /\d/.test(m[3])) return null;
+  return { prefix: m[1], target: parseInt(m[2], 10), suffix: m[3] };
+}
+
 export function CountUpStat({ value, label }: CountUpStatProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
   const [displayed, setDisplayed] = useState(() => {
-    const m = value.match(/^(\D*)([\d]+)(.*)/);
-    return m ? `${m[1]}0${m[3]}` : value;
+    const parsed = parseStat(value);
+    return parsed ? `${parsed.prefix}0${parsed.suffix}` : value;
   });
 
   useEffect(() => {
-    if (!isInView) return;
+    const parsed = parseStat(value);
 
-    const m = value.match(/^(\D*)([\d]+)(.*)/);
-    if (!m) {
+    // Ranges and non-numeric values render as-is, with no count-up.
+    if (!parsed) {
       setDisplayed(value);
       return;
     }
 
-    const [, prefix, numStr, suffix] = m;
-    const target = parseInt(numStr, 10);
+    if (!isInView) return;
+
+    const { prefix, target, suffix } = parsed;
     const duration = 1400;
     const startTime = performance.now();
 

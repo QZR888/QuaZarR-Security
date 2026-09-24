@@ -50,7 +50,7 @@ const sections = [
   {
     number: "08",
     title: "Prioritised Remediation Roadmap",
-    body: "All findings organised into three action horizons: This Week (zero-cost immediate actions), 30 Days (quick-win implementations), and 90 Days (strategic compliance investments).",
+    body: "All findings organised into three action horizons: This Week (free quick wins where available), 30 Days (quick-win implementations), and 90 Days (strategic compliance investments).",
   },
   {
     number: "09",
