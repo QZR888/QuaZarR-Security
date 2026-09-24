@@ -6,7 +6,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 export const metadata = buildMetadata({
   title: "Request a Quote",
   description:
-    "Request a scoped AI risk and compliance quote for your organisation, with a clear recommendation and pricing returned within one working day.",
+    "Request a scoped AI risk and compliance quote for your organisation, with a clear recommendation and pricing returned within 2 working days.",
   path: "/quote",
 });
 

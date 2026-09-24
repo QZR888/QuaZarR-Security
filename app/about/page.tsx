@@ -28,7 +28,7 @@ const founders = [
 const pillars = [
   {
     title: "The Gap Was Obvious",
-    body: "Enterprise AI security consultancies price UK SMBs out of the market. Generalist IT consultants lack the framework depth. We built the product that fills that gap — comprehensive, current, and priced for the businesses that actually need it.",
+    body: "Enterprise AI security consultancies price UK SMBs out of the market. Generalist IT consultants lack the framework depth. We built the product that fills that gap: comprehensive, current, and priced for the businesses that actually need it.",
   },
   {
     title: "Founder-Led By Design",
@@ -69,7 +69,7 @@ export default function AboutPage() {
             <p className="text-[17px] text-light leading-relaxed">
               QuaZarR Security was founded on a direct observation: UK SMBs are exposed to
               unprecedented AI-related compliance risk, and the consultancies equipped to address
-              it either price them out or talk past them. We built the solution — a comprehensive,
+              it either price them out or talk past them. We built the solution: a comprehensive,
               multi-framework AI risk assessment designed specifically for the businesses that
               need it most.
             </p>

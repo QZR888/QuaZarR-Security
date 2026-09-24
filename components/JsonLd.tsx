@@ -49,7 +49,7 @@ export function JsonLd() {
         name: "Basic AI Risk Assessment",
         provider: { "@id": "https://quazarrsecurity.com/#organization" },
         description:
-          "A structured AI risk assessment for UK SMBs. Key compliance gaps identified across the frameworks that matter, with a clear remediation roadmap in 5-7 working days.",
+          "A structured AI risk assessment for UK SMBs. Key compliance gaps identified across the frameworks that matter, with a clear remediation roadmap in 5 to 7 working days.",
         offers: {
           "@type": "Offer",
           price: "900",
@@ -62,7 +62,7 @@ export function JsonLd() {
         name: "Full AI Risk Review",
         provider: { "@id": "https://quazarrsecurity.com/#organization" },
         description:
-          "Board-ready AI risk review. Everything in Basic expanded to full depth, plus DPA review and Staff AI Usage Policy. 7-10 working days.",
+          "Board-ready AI risk review. Everything in Basic expanded to full depth, plus DPA review and Staff AI Usage Policy. 7 to 10 working days.",
         offers: {
           "@type": "Offer",
           price: "2500",

@@ -40,8 +40,8 @@ const additionalSections = [
   },
   {
     number: "14",
-    title: "GRC Framework Scored 1–10",
-    body: "Governance, Risk, and Compliance individually scored on a 1–10 scale with specific, evidenced findings per pillar. Suitable for inclusion in board risk reporting.",
+    title: "GRC Framework Scored 1 to 10",
+    body: "Governance, Risk, and Compliance individually scored on a 1 to 10 scale with specific, evidenced findings per pillar. Suitable for inclusion in board risk reporting.",
   },
   {
     number: "15",
@@ -110,13 +110,13 @@ export default function FullAssessmentPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="font-bebas text-3xl tracking-wide text-gold mb-6">
-              From £2,500 · 7–10 Working Days
+              From £2,500 · 7 to 10 Working Days
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.14}>
             <p className="text-light max-w-[600px] leading-relaxed">
               Board-ready. Legally structured. Comprehensive. The Full AI Risk Review is a
-              deep-dive assessment — everything in the Basic, expanded to full framework
+              deep-dive assessment: everything in the Basic, expanded to full framework
               depth, plus a complete DPA review and a ready-to-issue 14-clause Staff AI
               Usage Policy.
             </p>
@@ -170,7 +170,7 @@ export default function FullAssessmentPage() {
                 Turnaround
               </p>
               <p className="text-light">
-                7–10 working days from completion of your discovery call.
+                7 to 10 working days from receipt of your evidence pack.
               </p>
             </div>
           </AnimatedSection>
@@ -187,7 +187,7 @@ export default function FullAssessmentPage() {
                 href="/contact"
                 className="bg-red text-white text-xs font-bold uppercase tracking-[0.12em] px-8 py-4 hover:bg-red-dark transition-colors"
               >
-                Get Started — From £2,500
+                Get Started: From £2,500
               </Link>
               <Link
                 href="/quote"

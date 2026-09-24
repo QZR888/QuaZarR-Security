@@ -305,7 +305,7 @@ export default function PrivacyPolicyPage() {
           <AnimatedSection delay={0.1}>
             <p className="text-[17px] text-light leading-relaxed">
               How <span className="text-white font-medium">QuaZarR Security</span> collects,
-              uses, and protects your personal information — in accordance with UK GDPR.
+              uses, and protects your personal information, in accordance with UK GDPR.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.14}>

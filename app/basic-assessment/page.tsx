@@ -7,7 +7,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/Ani
 export const metadata = buildMetadata({
   title: "Basic AI Risk Assessment: From £900",
   description:
-    "A structured review of your AI tool usage mapped across five frameworks, with key compliance gaps and a prioritised action plan in 5-7 working days.",
+    "A structured review of your AI tool usage mapped across five frameworks, with key compliance gaps and a prioritised action plan in 5 to 7 working days.",
   path: "/basic-assessment",
 });
 
@@ -15,7 +15,7 @@ const sections = [
   {
     number: "01",
     title: "AI Tool Inventory",
-    body: "We document every AI tool in use across your business — by department, by function, and by the data each tool touches. Businesses typically discover tools they weren't aware staff were using.",
+    body: "We document every AI tool in use across your business: by department, by function, and by the data each tool touches. Businesses typically discover tools they weren't aware staff were using.",
   },
   {
     number: "02",
@@ -45,7 +45,7 @@ const sections = [
   {
     number: "07",
     title: "Full Risk Register",
-    body: "Every identified risk documented with: risk description, relevant framework, severity rating, likelihood, business impact, and the specific immediate action required to remediate. Every finding includes at least one free action you can take this week.",
+    body: "Every identified risk documented with: risk description, relevant framework, severity rating, likelihood, business impact, and the specific immediate action required to remediate. Findings include practical actions, many of them free.",
   },
   {
     number: "08",
@@ -89,7 +89,7 @@ export default function BasicAssessmentPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="font-bebas text-3xl tracking-wide text-red mb-6">
-              From £900 · 5–7 Working Days
+              From £900 · 5 to 7 Working Days
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.14}>
@@ -132,7 +132,7 @@ export default function BasicAssessmentPage() {
                 Turnaround
               </p>
               <p className="text-light">
-                5–7 working days from completion of your discovery call.
+                5 to 7 working days once we have everything we need from you.
               </p>
             </div>
           </AnimatedSection>
@@ -149,7 +149,7 @@ export default function BasicAssessmentPage() {
                 href="/contact"
                 className="bg-red text-white text-xs font-bold uppercase tracking-[0.12em] px-8 py-4 hover:bg-red-dark transition-colors"
               >
-                Get Started — From £900
+                Get Started: From £900
               </Link>
               <Link
                 href="/quote"

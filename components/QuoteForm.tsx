@@ -84,7 +84,7 @@ export function QuoteForm({ defaultTier }: QuoteFormProps) {
       <div className="border border-red bg-[rgba(204,0,0,0.08)] p-6">
         <p className="font-bold text-white mb-1">Quote request received.</p>
         <p className="text-sm text-light">
-          Thank you. We'll be in touch within one working day with a scoped recommendation.
+          Thank you. We'll be in touch within 2 working days with a scoped recommendation.
         </p>
       </div>
     );
@@ -230,7 +230,7 @@ export function QuoteForm({ defaultTier }: QuoteFormProps) {
             {...register("companySize", { required: "Required" })}
           >
             <option value="">Select</option>
-            {["1–10", "11–50", "51–200", "200+"].map((s) => (
+            {["1 to 10", "11 to 50", "51 to 200", "200+"].map((s) => (
               <option key={s} value={s}>
                 {s}
               </option>
@@ -250,7 +250,7 @@ export function QuoteForm({ defaultTier }: QuoteFormProps) {
             {...register("aiToolCount", { required: "Required" })}
           >
             <option value="">Select</option>
-            {["None", "1–5", "6–15", "15+", "Not Sure"].map((s) => (
+            {["None", "1 to 5", "6 to 15", "15+", "Not Sure"].map((s) => (
               <option key={s} value={s}>
                 {s}
               </option>
@@ -271,7 +271,7 @@ export function QuoteForm({ defaultTier }: QuoteFormProps) {
           {[
             "Basic AI Risk Assessment",
             "Full AI Risk Review",
-            "Not Sure — Help Me Decide",
+            "Not Sure: Help Me Decide",
           ].map((t) => (
             <label key={t} className="flex items-start gap-3 cursor-pointer">
               <input
@@ -337,7 +337,7 @@ export function QuoteForm({ defaultTier }: QuoteFormProps) {
       </button>
 
       <p className="text-xs text-subtle text-center">
-        We respond to all enquiries within one working day. Your information is handled in
+        We respond to all enquiries within 2 working days. Your information is handled in
         accordance with UK GDPR.
       </p>
     </form>

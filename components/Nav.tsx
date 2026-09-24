@@ -43,7 +43,7 @@ export function Nav() {
           <Link
             href="/"
             className="hover:opacity-80 transition-opacity shrink-0 flex items-center gap-3"
-            aria-label="QuaZarR Security — home"
+            aria-label="QuaZarR Security, home"
           >
             <Image
               src="/og-image.png"

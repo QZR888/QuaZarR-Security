@@ -68,7 +68,7 @@ export function ContactForm() {
       <div className="border border-red bg-[rgba(204,0,0,0.08)] p-6">
         <p className="font-bold text-white mb-1">Message received.</p>
         <p className="text-sm text-light">
-          We'll respond within one working day. If you'd like to speak sooner, email us directly at{" "}
+          We'll respond within 2 working days. If you'd like to speak sooner, email us directly at{" "}
           <a
             href="mailto:hello@quazarrsecurity.com"
             className="text-red underline underline-offset-2"
@@ -251,7 +251,7 @@ export function ContactForm() {
       </p>
 
       <p className="text-xs text-subtle text-center">
-        We respond to all enquiries within one working day. Your information is handled in
+        We respond to all enquiries within 2 working days. Your information is handled in
         accordance with UK GDPR.
       </p>
     </form>

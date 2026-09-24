@@ -94,12 +94,12 @@ function generateFindings(
   }
   if (noPolicy && tools.length > 0 && !tools.includes("none")) {
     findings.push(
-      "No staff AI usage policy in place. Your employees are making independent decisions about which AI tools to use with business data — with no oversight, authorisation, or audit trail. This is a governance failure under GRC and NIST AI RMF."
+      "No staff AI usage policy in place. Your employees are making independent decisions about which AI tools to use with business data, with no oversight, authorisation, or audit trail. This is a governance failure under GRC and NIST AI RMF."
     );
   }
   if (hasHealth) {
     findings.push(
-      "Health data is a Special Category under Article 9 UK GDPR. Processing it through any AI tool without explicit legal basis, technical safeguards, and documented justification carries the highest available penalty risk — up to £17.5 million or 4% of global annual turnover."
+      "Health data is a Special Category under Article 9 UK GDPR. Processing it through any AI tool without explicit legal basis, technical safeguards, and documented justification carries the highest available penalty risk: up to £17.5 million or 4% of global annual turnover."
     );
   }
   if (hasLegal && tools.some((t) => ["chatgpt", "gemini", "copilot"].includes(t))) {
@@ -299,7 +299,7 @@ export function QuestionnaireForm() {
     { id: "legal", label: "Legal research AI" },
     { id: "accounting", label: "Accounting AI / bookkeeping tools" },
     { id: "other", label: "Other AI tools" },
-    { id: "none", label: "None — we don't use AI tools" },
+    { id: "none", label: "None: we don't use AI tools" },
   ];
 
   const governanceOptions = [
@@ -349,7 +349,7 @@ export function QuestionnaireForm() {
         </h2>
         <p className="text-light max-w-md mx-auto mb-8">
           We've received your risk profile and will send your personalised free report within one
-          working day. We can walk you through your findings live — it takes 30 minutes
+          working day. We can walk you through your findings live: it takes 30 minutes
           and costs nothing.
         </p>
         <a
@@ -516,7 +516,7 @@ export function QuestionnaireForm() {
                 <svg
                   viewBox="0 0 192 192"
                   className="w-48 h-48"
-                  aria-label={`Risk score: ${animatedScore} — ${riskInfo.label}`}
+                  aria-label={`Risk score: ${animatedScore}, ${riskInfo.label}`}
                 >
                   <circle
                     cx="96" cy="96" r={gaugeRadius}
@@ -586,7 +586,7 @@ export function QuestionnaireForm() {
               <p className="text-sm text-light leading-relaxed">
                 This is your surface-level risk profile. Your full free report maps these findings
                 against the specific GDPR articles, OWASP LLM Top 10 (2026) vulnerabilities, and EU AI Act
-                obligations that apply to your business — with immediate actions you can take this
+                obligations that apply to your business, with immediate actions you can take this
                 week.
               </p>
             </div>

@@ -24,7 +24,7 @@ const sections = [
   },
   {
     title: "Managing Your Preferences",
-    body: "You can withdraw or change your cookie consent at any time by clicking the button below. You can also control cookies through your browser settings — note that disabling certain cookies may affect how the site functions.",
+    body: "You can withdraw or change your cookie consent at any time by clicking the button below. You can also control cookies through your browser settings. Note that disabling certain cookies may affect how the site functions.",
   },
 ];
 

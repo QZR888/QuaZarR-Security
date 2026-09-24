@@ -20,12 +20,12 @@ const retainerItems = [
   {
     number: "02",
     title: "AI Tool Vetting Before Adoption",
-    body: "Before your team adopts any new AI tool, we vet it first: DPA availability, training settings, data residency, EU AI Act classification, and sector-specific red flags. You receive a clear approved, conditional, or rejected verdict within 5 working days. Up to 3 vettings per quarter included; additional vettings at £95 each.",
+    body: "Before your team adopts any new AI tool, we vet it first: DPA availability, training settings, data residency, EU AI Act classification, and sector-specific red flags. You receive a clear approved, conditional or rejected verdict within 2 to 5 working days of receiving your request and the information needed. Up to 3 vettings per quarter included; additional vettings at £95 each.",
   },
   {
     number: "03",
     title: "Policy Maintenance",
-    body: "Your Staff AI Usage Policy and governance documentation are updated within 10 working days of any regulatory change relevant to your business. You are never left operating under outdated documentation.",
+    body: "Your Staff AI Usage Policy and governance documentation are reviewed and updated at each quarterly reassessment. Urgent regulatory changes are flagged to you by written alert.",
   },
   {
     number: "04",
@@ -35,7 +35,7 @@ const retainerItems = [
   {
     number: "05",
     title: "Advisory Hours",
-    body: "2 advisory hours included per quarter for questions, scenario reviews, or policy guidance. Available by email, call, or video. Same-working-day response to any request received before 2pm.",
+    body: "2 advisory hours included per quarter for questions, scenario reviews, or policy guidance. Available by email, call, or video.",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function RetainerPage() {
             <p className="text-[17px] text-light leading-relaxed">
               AI adoption inside businesses accelerates quarterly. New tools get adopted without
               approval. Staff change. Legislation updates. A single assessment gives you a
-              snapshot — a retainer keeps your compliance posture current as everything around it
+              snapshot. A retainer keeps your compliance posture current as everything around it
               evolves.
             </p>
           </AnimatedSection>

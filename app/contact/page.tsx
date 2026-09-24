@@ -60,7 +60,7 @@ export default function ContactPage() {
                     <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-muted mb-1">
                       Response Time
                     </p>
-                    <p className="text-sm text-light">Within one working day</p>
+                    <p className="text-sm text-light">Within 2 working days</p>
                   </div>
                 </div>
               </div>
@@ -73,7 +73,6 @@ export default function ContactPage() {
                   {[
                     "No technical knowledge required",
                     "No obligation to purchase",
-                    "Clients typically identify immediate free actions on the call",
                     "30 to 45 minutes via video or phone",
                   ].map((point) => (
                     <li key={point} className="flex items-start gap-3">

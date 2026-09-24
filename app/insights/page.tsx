@@ -30,7 +30,7 @@ export default function InsightsPage() {
           <AnimatedSection delay={0.1}>
             <p className="text-[17px] text-light leading-relaxed">
               Rowan publishes regular thinking on AI governance, GDPR enforcement, shadow AI risk,
-              and the evolving UK and EU AI regulatory landscape. Below is our recent content —
+              and the evolving UK and EU AI regulatory landscape. Below is our recent content,
               direct from LinkedIn.
             </p>
           </AnimatedSection>

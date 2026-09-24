@@ -27,7 +27,7 @@ export default function FreeReportPage() {
             <p className="text-[17px] text-light leading-relaxed">
               In under 3 minutes, our risk questionnaire will map your current AI exposure across
               data, compliance, and governance. You'll receive a personalised summary of your risk
-              areas — plus immediate actions you can take today.
+              areas, plus immediate actions you can take today.
             </p>
           </AnimatedSection>
         </div>

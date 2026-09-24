@@ -19,9 +19,9 @@ export const metadata = buildMetadata({
 
 const stats = [
   { value: "6", label: "Frameworks at Full Scope" },
-  { value: "5", label: "Working Days Turnaround (Basic)" },
+  { value: "5 to 7", label: "Working Days (Basic)" },
   { value: "12", label: "Deliverables in Every Assessment" },
-  { value: "£900", label: "Starting Price (vs £15k–50k Enterprise)" },
+  { value: "£900", label: "Starting Price (vs £15k to £50k Enterprise)" },
 ];
 
 const howItWorks = [
@@ -38,7 +38,7 @@ const howItWorks = [
   {
     number: "03",
     title: "Delivery & Roadmap",
-    body: "You receive a full risk register and prioritised remediation roadmap — broken into This Week, 30 Days, and 90 Days. Immediate free actions included.",
+    body: "You receive a full risk register and prioritised remediation roadmap: broken into This Week, 30 Days, and 90 Days. Free quick-win actions included where available.",
   },
   {
     number: "04",
@@ -57,8 +57,8 @@ const whyCards = [
     body: "We assess against the OWASP LLM Top 10 2026 edition, published 3 August 2026, alongside the Data (Use and Access) Act 2025 and the EU AI Act. An assessment still citing 2025 OWASP numbering is working from a superseded list.",
   },
   {
-    title: "Built for SMBs — Not Enterprise",
-    body: "Enterprise reports need a legal team to interpret and a six-figure budget to commission. Ours are written for business owners — actionable, plain English, same week.",
+    title: "Built for SMBs, Not Enterprise",
+    body: "Enterprise reports need a legal team to interpret and a six-figure budget to commission. Ours are written for business owners: actionable, plain English, same week.",
   },
   {
     title: "Every Framework That Matters, One Report",
@@ -78,7 +78,7 @@ const frameworks = [
 export default function HomePage() {
   return (
     <>
-      {/* ── HERO — full bleed two-column ── */}
+      {/* HERO: full bleed two-column */}
       <section className="relative w-full min-h-screen grid grid-cols-1 xl:grid-cols-2 hero-grid-bg overflow-hidden">
         {/* Left red accent */}
         <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-red z-10" aria-hidden="true" />
@@ -100,19 +100,17 @@ export default function HomePage() {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <h1 className="font-bebas text-[clamp(56px,7.5vw,100px)] leading-[0.92] tracking-[0.03em] text-white mb-8">
-              MOST UK BUSINESSES
+              YOUR STAFF ARE USING AI.
               <br />
-              USING AI ARE ALREADY
-              <br />
-              IN BREACH OF{" "}
-              <span className="text-red">GDPR.</span>
+              IS IT{" "}
+              <span className="text-red">GDPR COMPLIANT?</span>
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.18}>
             <p className="text-[18px] text-light leading-relaxed max-w-[580px] mb-8">
-              We tell you exactly where — and how to fix it. Structured AI risk assessments for UK
+              We tell you exactly where, and how to fix it. Structured AI risk assessments for UK
               SMBs in recruitment, legal, finance, HR, and accountancy. Board-ready reports.
-              Delivered in 5-7 working days.
+              Delivered in 5 to 7 working days once we have what we need.
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.24}>
@@ -133,14 +131,14 @@ export default function HomePage() {
           </AnimatedSection>
         </div>
 
-        {/* Right: framework panel — full height dark panel */}
+        {/* Right: framework panel, full height dark panel */}
         <AnimatedSection
           delay={0.3}
           className="hidden xl:flex flex-col justify-center px-16 py-24"
           style={{ background: "#141414", borderLeft: "1px solid #2e2e2e" }}
         >
           <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-red mb-8">
-            Assessment Coverage — Every Engagement
+            Assessment Coverage | Every Engagement
           </p>
           <div className="flex flex-col divide-y divide-divider mb-10">
             {[
@@ -167,7 +165,7 @@ export default function HomePage() {
             </div>
             <div className="text-right">
               <p className="text-xs text-muted mb-1">Enterprise equivalent</p>
-              <p className="text-sm font-bold text-subtle line-through">£15k – £50k+</p>
+              <p className="text-sm font-bold text-subtle line-through">£15k to £50k+</p>
             </div>
           </div>
         </AnimatedSection>
@@ -179,7 +177,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── STATS BAR — full bleed 4 columns ── */}
+      {/* STATS BAR: full bleed 4 columns */}
       <section
         className="w-full grid grid-cols-2 lg:grid-cols-4"
         style={{ background: "#141414", borderTop: "1px solid #cc0000", borderBottom: "1px solid #cc0000" }}
@@ -195,7 +193,7 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* ── PROBLEM STATEMENT — full bleed two columns ── */}
+      {/* PROBLEM STATEMENT: full bleed two columns */}
       <section className="w-full grid grid-cols-1 lg:grid-cols-2">
         {/* Left */}
         <div className="px-12 lg:px-20 py-24">
@@ -233,7 +231,7 @@ export default function HomePage() {
           </AnimatedSection>
         </div>
 
-        {/* Right — threat cards stacked */}
+        {/* Right: threat cards stacked */}
         <div
           className="px-12 lg:px-16 py-24 flex flex-col justify-center gap-6"
           style={{ background: "#141414", borderLeft: "1px solid #2e2e2e" }}
@@ -275,7 +273,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS — full bleed 4 columns ── */}
+      {/* HOW IT WORKS: full bleed 4 columns */}
       <section className="w-full tech-grid" style={{ borderTop: "1px solid #2e2e2e" }}>
         <div className="px-12 lg:px-20 pt-16 pb-10">
           <AnimatedSection className="mb-3">
@@ -307,7 +305,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SERVICE LADDER — full bleed two columns ── */}
+      {/* SERVICE LADDER: full bleed two columns */}
       <section className="w-full grid grid-cols-1 lg:grid-cols-2" style={{ borderTop: "1px solid #2e2e2e" }}>
         <div className="px-12 lg:px-20 py-20 flex flex-col">
           <AnimatedSection className="mb-3">
@@ -320,13 +318,13 @@ export default function HomePage() {
           </AnimatedSection>
           <AnimatedSection className="mb-6">
             <p className="font-bebas text-5xl text-white tracking-wide leading-none mb-2">£900</p>
-            <p className="text-sm text-muted">5–7 working days from discovery call</p>
+            <p className="text-sm text-muted">5 to 7 working days once we have everything we need from you</p>
           </AnimatedSection>
           <AnimatedSection className="flex-1">
             <p className="text-[16px] text-light leading-relaxed mb-8">
               A structured review of your AI tool usage mapped across five frameworks, six for
               recruitment clients including the Equality Act 2010. Key compliance gaps
-              identified. Clear remediation roadmap — broken into This Week, 30 Days,
+              identified. Clear remediation roadmap: broken into This Week, 30 Days,
               and 90 Days.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -360,7 +358,7 @@ export default function HomePage() {
           </AnimatedSection>
           <AnimatedSection className="mb-6" delay={0.12}>
             <p className="font-bebas text-5xl text-gold tracking-wide leading-none mb-2">£2,500</p>
-            <p className="text-sm text-muted">7–10 working days from discovery call</p>
+            <p className="text-sm text-muted">7 to 10 working days from receipt of your evidence pack</p>
           </AnimatedSection>
           <AnimatedSection className="flex-1" delay={0.14}>
             <p className="text-[16px] text-light leading-relaxed mb-8">
@@ -385,7 +383,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── FRAMEWORKS — full bleed ── */}
+      {/* FRAMEWORKS: full bleed */}
       <section
         className="w-full px-12 lg:px-20 py-24"
         style={{ background: "#141414", borderTop: "1px solid #2e2e2e" }}
@@ -427,14 +425,14 @@ export default function HomePage() {
         </AnimatedSection>
         <AnimatedSection>
           <p className="text-[16px] text-muted max-w-[800px] leading-relaxed">
-            Enterprise consultancies charge £15,000–50,000 for equivalent multi-framework coverage
+            Enterprise consultancies charge £15,000 to £50,000 for equivalent multi-framework coverage
             and require separate specialists per discipline. We deliver a fully cross-referenced,
             coordinated assessment as one coherent report.
           </p>
         </AnimatedSection>
       </section>
 
-      {/* ── WHY QUAZARR — full bleed 2×2 grid ── */}
+      {/* WHY QUAZARR: full bleed 2x2 grid */}
       <section className="w-full" style={{ borderTop: "1px solid #2e2e2e" }}>
         <div className="px-12 lg:px-20 pt-16 pb-10">
           <AnimatedSection className="mb-3">
@@ -462,7 +460,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── COMPARISON TABLE — full bleed ── */}
+      {/* COMPARISON TABLE: full bleed */}
       <section
         className="w-full px-12 lg:px-20 py-24"
         style={{ background: "#141414", borderTop: "1px solid #2e2e2e" }}
@@ -480,22 +478,21 @@ export default function HomePage() {
         </AnimatedSection>
       </section>
 
-      {/* ── FINAL CTA — full bleed ── */}
+      {/* FINAL CTA: full bleed */}
       <section
         className="w-full px-12 lg:px-20 py-28 text-center"
         style={{ background: "#0a0a0a", borderTop: "3px solid #cc0000" }}
       >
         <AnimatedSection>
           <h2 className="font-bebas text-[clamp(44px,6vw,80px)] tracking-[0.03em] text-white mb-6 leading-[0.95]">
-            Find Out Where You Stand — For Free
+            Find Out Where You Stand, For Free
           </h2>
         </AnimatedSection>
         <AnimatedSection delay={0.08}>
           <p className="text-[17px] text-light leading-relaxed max-w-[680px] mx-auto mb-10">
             Book a 30 to 45 minute discovery call. We'll map your AI tool usage and tell you exactly
-            where you stand against GDPR and the frameworks that matter. No obligation. Clients
-            typically identify at least two active compliance issues they weren't aware of — and
-            walk away with immediate free actions they can take the same day.
+            where you stand against GDPR and the frameworks that matter. No obligation. You'll leave
+            the call with a clearer picture of where you stand.
           </p>
         </AnimatedSection>
         <AnimatedSection delay={0.14}>

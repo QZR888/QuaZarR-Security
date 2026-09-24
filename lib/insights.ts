@@ -21,7 +21,7 @@ export const insights: Insight[] = [
   },
   {
     id: "2",
-    title: "The ICO Is Coming For AI — What UK SMBs Need To Know",
+    title: "The ICO Is Coming For AI: What UK SMBs Need To Know",
     excerpt:
       "ICO enforcement trends are shifting toward AI-related GDPR violations. The enforcement actions already issued signal what's coming for businesses that haven't acted.",
     topic: "ICO Enforcement",

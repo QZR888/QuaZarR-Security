@@ -17,10 +17,10 @@ const basicIncludes = [
   "EU AI Act risk classification (deployer tier)",
   "OWASP LLM Top 10 (2026): all 10 categories",
   "NIST AI RMF maturity snapshot",
-  "GRC posture overview — scored",
+  "GRC posture overview: scored",
   "UK GDPR & Data (Use and Access) Act 2025 compliance snapshot",
   "Full risk register with free actions per finding",
-  "Remediation roadmap — This Week / 30 Days / 90 Days",
+  "Remediation roadmap: This Week / 30 Days / 90 Days",
   "Founder-led delivery from discovery call to report",
   "One-page executive summary with overall risk rating",
   "Transparent 5x5 risk scoring methodology",
@@ -29,12 +29,12 @@ const basicIncludes = [
 const fullExtras = [
   "EU AI Act deployer gap analysis: per tool, per article",
   "NIST AI RMF full 4-function assessment",
-  "GRC framework scored 1–10 across all three pillars",
+  "GRC framework scored 1 to 10 across all three pillars",
   "UK GDPR + Data (Use and Access) Act 2025 full gap analysis",
-  "Framework cross-reference matrix — every framework in scope",
+  "Framework cross-reference matrix: every framework in scope",
   "Documented Evidence Register for every material finding",
   "Regulatory exposure explained against UK GDPR fine ceilings",
-  "DPA review — up to 10 AI tool providers",
+  "DPA review: up to 10 AI tool providers",
   "14-clause Staff AI Usage Policy + ADM procedure (Articles 22A to 22D)",
   "90-day roadmap with action owners",
   "Extended findings walkthrough on delivery, plus 90-day reassessment session",
@@ -98,7 +98,7 @@ export default function ServicesPage() {
                 Basic AI Risk Assessment
               </h2>
               <p className="font-bebas text-4xl text-white tracking-wide leading-none mb-1">£900</p>
-              <p className="text-xs text-muted mb-6">5–7 working days</p>
+              <p className="text-xs text-muted mb-6">5 to 7 working days</p>
               <p className="text-sm text-light leading-relaxed mb-6 flex-1">
                 A structured review of your AI tool usage mapped across five frameworks, six for
                 recruitment clients including the Equality Act 2010. Key compliance gaps
@@ -127,7 +127,7 @@ export default function ServicesPage() {
                 href="/contact"
                 className="block text-center bg-red text-white text-xs font-bold uppercase tracking-[0.12em] px-6 py-3 hover:bg-red-dark transition-colors"
               >
-                Get Started — From £900
+                Get Started: From £900
               </Link>
             </div>
           </AnimatedSection>
@@ -140,7 +140,7 @@ export default function ServicesPage() {
                 Full AI Risk Review
               </h2>
               <p className="font-bebas text-4xl text-gold tracking-wide leading-none mb-1">£2,500</p>
-              <p className="text-xs text-muted mb-6">7–10 working days</p>
+              <p className="text-xs text-muted mb-6">7 to 10 working days</p>
               <p className="text-sm text-light leading-relaxed mb-4 flex-1">
                 Board-ready deep-dive. Everything in Basic expanded to full depth, plus
                 DPA review, Staff AI Policy, and 90-day reassessment call.
@@ -171,7 +171,7 @@ export default function ServicesPage() {
                 href="/contact"
                 className="block text-center border border-gold text-gold text-xs font-bold uppercase tracking-[0.12em] px-6 py-3 hover:bg-gold hover:text-surface transition-colors"
               >
-                Get Started — From £2,500
+                Get Started: From £2,500
               </Link>
             </div>
           </AnimatedSection>
@@ -213,6 +213,14 @@ export default function ServicesPage() {
             </div>
           </AnimatedSection>
         </div>
+
+        <AnimatedSection delay={0.24}>
+          <p className="text-xs text-subtle leading-relaxed max-w-[1400px] mx-auto mt-10">
+            What we don't do: penetration testing, red teaming, vulnerability scanning or incident
+            response, and no emergency or same-day response service. Our work is not legal advice
+            and does not guarantee compliance.
+          </p>
+        </AnimatedSection>
       </section>
 
       <RedRule className="max-w-[1400px] mx-auto px-8" />
