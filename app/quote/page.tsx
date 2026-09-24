@@ -1,31 +1,14 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import { SectionLabel } from "@/components/SectionLabel";
 import { QuoteForm } from "@/components/QuoteForm";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/quote" },
+export const metadata = buildMetadata({
   title: "Request a Quote",
   description:
-    "Tell us about your organisation and we'll come back with a scoped recommendation and pricing within one working day.",
-  openGraph: {
-    siteName: "QuaZarR Security",
-    locale: "en_GB",
-    type: "website",
-    url: "https://quazarrsecurity.com/quote",
-    title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
-    description:
-      "AI risk assessments for UK SMBs. Board-ready reports. From £900.",
-    images: [
-      {
-        url: "https://quazarrsecurity.com/og-image.png",
-        width: 1080,
-        height: 1080,
-        alt: "QuaZarR Security",
-      },
-    ],
-  },
-};
+    "Request a scoped AI risk and compliance quote for your organisation, with a clear recommendation and pricing returned within one working day.",
+  path: "/quote",
+});
 
 export default function QuotePage() {
   return (

@@ -1,20 +1,15 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { SectionLabel } from "@/components/SectionLabel";
 import { RedRule } from "@/components/RedRule";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/retainer" },
-  title: "Retainer — Ongoing AI Risk Support",
+export const metadata = buildMetadata({
+  title: "Retainer: Ongoing AI Risk Support",
   description:
-    "Quarterly reassessments, new AI tool vetting, and policy maintenance. Your AI risk doesn't stand still — your protection shouldn't either.",
-  openGraph: {
-    url: "https://quazarrsecurity.com/retainer",
-    title: "Retainer — QuaZarR Security",
-    description: "Ongoing AI risk management for UK SMBs. Quarterly reassessments, policy updates, regulatory alerts.",
-  },
-};
+    "Keep your AI risk position current with quarterly reassessments, pre-adoption tool vetting and policy updates. £395 per month on a 12-month term.",
+  path: "/retainer",
+});
 
 const retainerItems = [
   {

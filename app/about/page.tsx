@@ -1,21 +1,16 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import { SectionLabel } from "@/components/SectionLabel";
 import { RedRule } from "@/components/RedRule";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/about" },
-  title: "About — The Founder Behind QuaZarR Security",
+export const metadata = buildMetadata({
+  title: "About the Founder",
   description:
-    "QuaZarR Security was founded to give UK SMBs access to comprehensive AI risk assessments at a price that makes sense. Meet Rowan Money, founder and CEO.",
-  openGraph: {
-    url: "https://quazarrsecurity.com/about",
-    title: "About — QuaZarR Security",
-    description: "Meet Rowan Money, founder and CEO of QuaZarR Security.",
-  },
-};
+    "QuaZarR Security is a solo AI risk and compliance consultancy for UK SMBs, founded by Rowan Money to make rigorous assessments affordable for smaller firms.",
+  path: "/about",
+});
 
 const founders = [
   {

@@ -656,7 +656,7 @@ export function QuestionnaireForm() {
                   {...register("consent", { required: "You must agree to continue" })}
                 />
                 <span className="text-xs text-muted leading-relaxed">
-                  I agree to receive my free report and occasional AI security insights from QuaZarR
+                  I agree to receive my free report and occasional AI risk insights from QuaZarR
                   Security. You can unsubscribe at any time.
                 </span>
               </label>

@@ -1,32 +1,15 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import { Mail, Clock, Check } from "lucide-react";
 import { SectionLabel } from "@/components/SectionLabel";
 import { ContactForm } from "@/components/ContactForm";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/contact" },
-  title: "Contact — Book a Discovery Call",
+export const metadata = buildMetadata({
+  title: "Contact: Book a Discovery Call",
   description:
-    "Book a 30 to 45 minute discovery call with QuaZarR Security. We map your AI tool usage and tell you exactly where you stand. No obligation.",
-  openGraph: {
-    siteName: "QuaZarR Security",
-    locale: "en_GB",
-    type: "website",
-    url: "https://quazarrsecurity.com/contact",
-    title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
-    description:
-      "AI risk assessments for UK SMBs. Board-ready reports. From £900.",
-    images: [
-      {
-        url: "https://quazarrsecurity.com/og-image.png",
-        width: 1080,
-        height: 1080,
-        alt: "QuaZarR Security",
-      },
-    ],
-  },
-};
+    "Book a 30 to 45 minute discovery call with QuaZarR Security and find out exactly where your business stands on AI risk and compliance. No obligation.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

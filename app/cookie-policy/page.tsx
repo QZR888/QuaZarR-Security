@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { SectionLabel } from "@/components/SectionLabel";
 import { RedRule } from "@/components/RedRule";
@@ -6,17 +6,12 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { CookiebotDeclaration } from "@/components/CookiebotDeclaration";
 import { CookiePreferencesButton } from "@/components/CookiePreferencesButton";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/cookie-policy" },
+export const metadata = buildMetadata({
   title: "Cookie Policy",
   description:
-    "How QuaZarR Security uses cookies on quazarrsecurity.com, what data is collected, and how to manage your preferences.",
-  openGraph: {
-    url: "https://quazarrsecurity.com/cookie-policy",
-    title: "Cookie Policy | QuaZarR Security",
-    description: "How QuaZarR Security uses cookies and how to manage your preferences.",
-  },
-};
+    "How QuaZarR Security uses cookies on quazarrsecurity.com, what data is collected, and how you can review or change your preferences at any time.",
+  path: "/cookie-policy",
+});
 
 const sections = [
   {

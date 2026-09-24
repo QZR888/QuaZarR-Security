@@ -6,12 +6,20 @@ export function JsonLd() {
         "@type": "Organization",
         "@id": "https://quazarrsecurity.com/#organization",
         name: "QuaZarR Security",
+        legalName: "QuaZarR Security Ltd",
         url: "https://quazarrsecurity.com",
-        logo: "https://quazarrsecurity.com/favicon.ico",
+        logo: "https://quazarrsecurity.com/og-image.png",
         description:
-          "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks relevant to your sector and tier. Delivered in 5-7 working days.",
+          "AI risk and compliance assessments for UK SMBs in recruitment, accountancy and HR. Structured reviews across the frameworks relevant to your sector and tier.",
         email: "hello@quazarrsecurity.com",
         areaServed: "GB",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "71-75 Shelton Street, Covent Garden",
+          addressLocality: "London",
+          postalCode: "WC2H 9JQ",
+          addressCountry: "GB",
+        },
         knowsAbout: [
           "AI Risk Assessment",
           "EU AI Act Compliance",

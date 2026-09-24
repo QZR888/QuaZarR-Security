@@ -31,7 +31,7 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://quazarrsecurity.com"),
   title: {
-    default: "QuaZarR Security | AI Risk Assessments for UK SMBs",
+    default: "QuaZarR Security | AI Risk and Compliance for UK SMBs",
     template: "%s | QuaZarR Security",
   },
   description:
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
       "AI risk assessments for UK SMBs. Board-ready reports. From £900.",
     images: [
       {
-        url: "https://quazarrsecurity.com/og-image.png",
-        width: 1080,
-        height: 1080,
+        url: "https://quazarrsecurity.com/og-image-wide.png",
+        width: 1200,
+        height: 630,
         alt: "QuaZarR Security",
       },
     ],
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
     description:
       "AI risk assessments for UK SMBs. From £900.",
-    images: ["https://quazarrsecurity.com/og-image.png"],
+    images: ["https://quazarrsecurity.com/og-image-wide.png"],
   },
   icons: {
     icon: "/favicon.ico",

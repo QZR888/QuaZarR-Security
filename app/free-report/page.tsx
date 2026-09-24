@@ -1,19 +1,14 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import { SectionLabel } from "@/components/SectionLabel";
 import { QuestionnaireForm } from "@/components/QuestionnaireForm";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/free-report" },
+export const metadata = buildMetadata({
   title: "Free AI Risk Report",
   description:
-    "In under 3 minutes, map your AI exposure across data, compliance, and governance. Receive a personalised risk summary and immediate actions you can take today.",
-  openGraph: {
-    url: "https://quazarrsecurity.com/free-report",
-    title: "Free AI Risk Report — QuaZarR Security",
-    description: "Map your AI exposure in 3 minutes. Personalised risk summary. Free.",
-  },
-};
+    "Map your AI exposure in under three minutes and get a personalised AI risk and compliance summary, with immediate actions you can take the same day.",
+  path: "/free-report",
+});
 
 export default function FreeReportPage() {
   return (

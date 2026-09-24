@@ -1,33 +1,16 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { SectionLabel } from "@/components/SectionLabel";
 import { RedRule } from "@/components/RedRule";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/services" },
-  title: "Services — AI Risk Assessments",
+export const metadata = buildMetadata({
+  title: "Services: AI Risk and Compliance Assessments",
   description:
-    "Three service tiers: Basic AI Risk Assessment from £900, Full AI Risk Review from £2,500, and ongoing Retainer support. Multi-framework coverage.",
-  openGraph: {
-    siteName: "QuaZarR Security",
-    locale: "en_GB",
-    type: "website",
-    url: "https://quazarrsecurity.com/services",
-    title: "QuaZarR Security | AI Risk Assessments for UK SMBs",
-    description:
-      "AI risk assessments for UK SMBs. Board-ready reports. From £900.",
-    images: [
-      {
-        url: "https://quazarrsecurity.com/og-image.png",
-        width: 1080,
-        height: 1080,
-        alt: "QuaZarR Security",
-      },
-    ],
-  },
-};
+    "Three tiers of AI risk and compliance review for UK SMBs: Basic from £900, Full AI Risk Review from £2,500, and an ongoing monthly retainer.",
+  path: "/services",
+});
 
 const basicIncludes = [
   "Complete AI tool inventory",

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { ChevronDown, Shield, AlertTriangle, Eye, ArrowRight, Check } from "lucide-react";
 import { SectionLabel } from "@/components/SectionLabel";
@@ -9,30 +9,13 @@ import { FrameworkBadge } from "@/components/FrameworkBadge";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com" },
+export const metadata = buildMetadata({
   title: "QuaZarR Security | AI Risk and Compliance for UK SMBs",
+  absoluteTitle: true,
   description:
-    "AI risk assessments for UK SMBs in recruitment, legal, finance, HR, and accountancy. Structured assessments across the frameworks that matter: OWASP LLM Top 10 (2026), EU AI Act, NIST AI RMF, GRC, UK GDPR as amended by DUAA 2025, and the Equality Act 2010 for recruitment. Delivered in 5-7 working days from £900.",
-  openGraph: {
-    title: "QuaZarR Security | AI Risk and Compliance for UK SMBs",
-    description:
-      "Structured AI risk assessments for UK SMBs. From £900.",
-    url: "https://quazarrsecurity.com",
-  },
-};
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "QuaZarR Security",
-  description:
-    "AI risk and compliance consultancy providing structured AI risk assessments for UK SMBs.",
-  url: "https://quazarrsecurity.com",
-  email: "hello@quazarrsecurity.com",
-  areaServed: "GB",
-  foundingDate: "2026",
-};
+    "AI risk and compliance assessments for UK SMBs in recruitment, accountancy and HR. Structured reviews against the frameworks that matter, from £900.",
+  path: "",
+});
 
 const stats = [
   { value: "6", label: "Frameworks at Full Scope" },
@@ -95,11 +78,6 @@ const frameworks = [
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
       {/* ── HERO — full bleed two-column ── */}
       <section className="relative w-full min-h-screen grid grid-cols-1 xl:grid-cols-2 hero-grid-bg overflow-hidden">
         {/* Left red accent */}

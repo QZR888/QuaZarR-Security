@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { SectionLabel } from "@/components/SectionLabel";
@@ -7,17 +7,12 @@ import { InsightCard } from "@/components/InsightCard";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 import { insights } from "@/lib/insights";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/insights" },
-  title: "AI Security Insights",
+export const metadata = buildMetadata({
+  title: "AI Risk Insights",
   description:
-    "Regular thinking on AI governance, GDPR enforcement, shadow AI risk, and the evolving UK and EU AI regulatory landscape — direct from LinkedIn.",
-  openGraph: {
-    url: "https://quazarrsecurity.com/insights",
-    title: "AI Security Insights — QuaZarR Security",
-    description: "AI governance, GDPR enforcement, shadow AI risk, and UK/EU regulatory intelligence.",
-  },
-};
+    "Regular thinking on AI risk and compliance for UK SMBs, covering AI governance, GDPR enforcement, shadow AI risk and UK and EU regulatory change.",
+  path: "/insights",
+});
 
 export default function InsightsPage() {
   return (
@@ -25,7 +20,7 @@ export default function InsightsPage() {
       <section className="w-full py-24 px-8 lg:px-16 hero-grid-bg">
         <div className="max-w-3xl mx-auto text-center">
           <AnimatedSection>
-            <SectionLabel className="mb-4 flex justify-center">AI Security Insights</SectionLabel>
+            <SectionLabel className="mb-4 flex justify-center">AI Risk Insights</SectionLabel>
           </AnimatedSection>
           <AnimatedSection delay={0.06}>
             <h1 className="font-bebas text-[clamp(48px,7vw,80px)] tracking-[0.04em] text-white mb-4">

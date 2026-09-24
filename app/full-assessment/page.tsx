@@ -1,26 +1,16 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { SectionLabel } from "@/components/SectionLabel";
 import { RedRule } from "@/components/RedRule";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/full-assessment" },
-  title: "Full AI Risk Review — From £2,500",
+export const metadata = buildMetadata({
+  title: "Full AI Risk Review: From £2,500",
   description:
-    "Board-ready review. Full framework gap analysis, DPA review, 14-clause Staff AI Policy, and 90-day reassessment call.",
-  openGraph: {
-    url: "https://quazarrsecurity.com/full-assessment",
-    title: "Full AI Risk Review — QuaZarR Security",
-    description: "Board-ready. From £2,500.",
-  },
-  twitter: {
-    card: "summary_large_image",
-    description: "AI risk assessments for UK SMBs. From £2,500.",
-    images: ["https://quazarrsecurity.com/og-image.png"],
-  },
-};
+    "The board-ready AI risk and compliance review for UK SMBs. Full framework gap analysis, DPA review, Staff AI Usage Policy and a 90-day reassessment.",
+  path: "/full-assessment",
+});
 
 const basicIncludes = [
   "Complete AI tool inventory",

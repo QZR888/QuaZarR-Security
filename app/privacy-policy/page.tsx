@@ -1,20 +1,15 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { SectionLabel } from "@/components/SectionLabel";
 import { RedRule } from "@/components/RedRule";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/privacy-policy" },
+export const metadata = buildMetadata({
   title: "Privacy Policy",
   description:
-    "QuaZarR Security privacy policy — how we collect, use, and protect your personal information in accordance with UK GDPR.",
-  openGraph: {
-    url: "https://quazarrsecurity.com/privacy-policy",
-    title: "Privacy Policy | QuaZarR Security",
-    description: "How QuaZarR Security collects, uses, and protects your personal information.",
-  },
-};
+    "How QuaZarR Security collects, uses and protects your personal information, in accordance with UK GDPR and the Data (Use and Access) Act 2025.",
+  path: "/privacy-policy",
+});
 
 const termlyHTML = `
 <style>

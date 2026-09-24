@@ -1,20 +1,15 @@
-import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { SectionLabel } from "@/components/SectionLabel";
 import { RedRule } from "@/components/RedRule";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "https://quazarrsecurity.com/basic-assessment" },
-  title: "Basic AI Risk Assessment — From £900",
+export const metadata = buildMetadata({
+  title: "Basic AI Risk Assessment: From £900",
   description:
-    "A structured AI risk assessment for UK SMBs. Key compliance gaps identified across the frameworks that matter, with a clear remediation roadmap in 5-7 working days.",
-  openGraph: {
-    url: "https://quazarrsecurity.com/basic-assessment",
-    title: "Basic AI Risk Assessment — QuaZarR Security",
-    description: "A structured AI risk assessment for UK SMBs. From £900.",
-  },
-};
+    "A structured review of your AI tool usage mapped across five frameworks, with key compliance gaps and a prioritised action plan in 5-7 working days.",
+  path: "/basic-assessment",
+});
 
 const sections = [
   {
